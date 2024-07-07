@@ -1,0 +1,1966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet East</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="fixed h-12 w-full bg-gray-500 z-9999 top-0">
+      <div class="flex h-full justify-between">
+        <div class="flex h-full w-full sm:w-auto">
+          <div class="order-3 ml-auto sm:order-1 sm:ml-0">
+            <button
+              class="group flex h-full flex-col items-center justify-center px-3.5 hamburger-menu"
+              aria-label="Menu"
+            >
+              <div
+                class="h-px w-4 m-0.5 bg-white transition ease duration-300 opacity-50 line line1"
+              ></div>
+              <div
+                class="h-px w-4 m-0.5 bg-white transition ease duration-300 opacity-50 line line2"
+              ></div>
+              <div
+                class="h-px w-4 m-0.5 bg-white transition ease duration-300 opacity-50 line line3"
+              ></div>
+            </button>
+          </div>
+          <div
+            class="order-1 ml-4 flex items-center text-accent sm:order-2 md:ml-0"
+          >
+            <div class="flex h-full items-center">
+              <a class="flex h-full items-center" href="/"
+                ><span class="w-14" aria-label="Home Page" role="link"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 47 13"
+                    fill="var(--primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M30.5454 1.36828C30.5454 2.12396 29.9328 2.73655 29.1771 2.73655C28.4214 2.73655 27.8088 2.12396 27.8088 1.36828C27.8088 0.612598 28.4214 0 29.1771 0C29.9328 0 30.5454 0.612598 30.5454 1.36828ZM26.6818 12.2524H24.3134V0.508286H26.6818V12.2524ZM23.1691 12.2524V10.1788H21.9933C21.3718 10.1788 21.1366 9.90785 21.1366 9.40022V5.62534H23.1187V3.62885H21.1366V1.21293H18.7682L18.7705 3.62885L17.3444 3.63266L17.3404 5.62534H18.7682V9.7861C18.7682 11.4303 19.5913 12.2524 21.2374 12.2524H23.1691ZM16.1379 3.62885C14.7941 3.62885 14.1222 4.14895 13.6519 4.9207L13.4323 3.63266H11.2835V12.2567H13.6539V8.02656C13.6539 6.71794 14.1894 5.6658 15.6003 5.6658H16.5543V3.63266L16.1379 3.62885ZM27.995 12.2524H30.3802V3.72521H27.995V12.2524ZM35.5116 12.353C33.1096 12.353 31.4802 11.2289 31.3795 9.38345H33.6303C33.7143 10.1384 34.3694 10.6585 35.5284 10.6585C36.5194 10.6585 37.1241 10.3397 37.1241 9.73577C37.1241 9.05717 36.5789 8.98541 35.2934 8.8162L35.142 8.79624C33.1264 8.56136 31.5642 8.10838 31.5642 6.32999C31.5642 4.61871 33.0592 3.49463 35.2764 3.51141C37.5944 3.51141 39.1902 4.53482 39.3077 6.29643H37.0401C36.9729 5.60857 36.3178 5.18914 35.3604 5.18914C34.4365 5.18914 33.8319 5.52468 33.8319 6.07833C33.8319 6.71115 34.5232 6.79471 35.6931 6.93611L35.8139 6.95075C37.796 7.15207 39.4421 7.60506 39.4421 9.55122C39.4421 11.2625 37.8296 12.353 35.5116 12.353ZM45.7217 12.2524V10.1788H44.5459C43.9244 10.1788 43.6892 9.90785 43.6892 9.40023V5.62535H45.6713V3.62886H43.6892V1.21294H41.3208L41.3231 3.62886L39.897 3.63267L39.893 5.62535H41.3208V9.78611C41.3208 11.4303 42.1439 12.2524 43.79 12.2524H45.7217ZM5.02751 12.247H2.14772H0V10.3357L3.49117 1.22374H6.70832L10.1946 10.3335V12.247H7.94583H7.10308H5.02751ZM7.67152 10.1609L5.09734 3.50719L2.48466 10.1609H7.67152Z"
+                    ></path>
+                  </svg> </span
+              ></a>
+            </div>
+          </div>
+          <div class="order-2 sm:order-2">
+            <div class="flex h-full items-center justify-center pr-2 pl-3">
+              <div
+                class="flex items-center justify-center rounded-full p-2 transition-all duration-300 bg-gray-400 hover:bg-gray-500"
+                role="button"
+                data-sidebar-opener="search"
+                aria-label="Search"
+                id="search-icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="far"
+                  data-icon="magnifying-glass"
+                  class="svg-inline--fa fa-magnifying-glass fa-sm transition-all duration-300 text-white"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M368 208A160 160 0 1 0 48 208a160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1L505 471c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L337.1 371.1z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto hidden lg:flex">
+          <ul
+            class="flex h-full items-center gap-1 xl:gap-2 2xl:gap-6 4xl:gap-12"
+          >
+            <li class="h-full w-full">
+              <a
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100 text-white"
+                role="link"
+                href="/"
+                >Home</a
+              >
+            </li>
+            <li class="h-full w-full" data-testid="MenuItem">
+              <a
+                data-testid="Link"
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-yellow-400 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100"
+                role="link"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="h-full w-full">
+              <a
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-gray-500 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100"
+                role="link"
+                href="#"
+                >Explore Tracks</a
+              >
+            </li>
+            <li class="h-full w-full" data-testid="MenuItem">
+              <a
+                data-testid="Link"
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-gray-500 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100"
+                role="link"
+                href="artist-album.html"
+                >Artist and Album</a
+              >
+            </li>
+            <li class="h-full w-full" data-testid="MenuItem">
+              <a
+                data-testid="Link"
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-gray-500 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100"
+                role="link"
+                href="#"
+                >Download List</a
+              >
+            </li>
+            <li class="h-full w-full">
+              <a
+                data-testid="Link"
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-gray-500 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100"
+                role="link"
+                href="#"
+                >FAQs</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="hidden h-full items-center justify-end gap-3 sm:flex sm:pr-5"
+        >
+          <button
+            type="button"
+            class="flex justify-center items-center font-bold rounded-full text-black transition-colors hover:text-primary bg-yellow-400 transition-all hover:bg-yellow-500 duration-300 py-1 px-5.5 text-sm leading-3"
+          >
+            <span
+              class="relative flex min-h-5 items-center justify-center gap-1"
+              ><span class="whitespace-nowrap">Start Free Now</span></span
+            >
+          </button>
+          <ul class="h-full">
+            <li class="h-full w-full">
+              <a
+                class="flex h-full items-center text-gray-100 transition-all duration-300 hover:text-white"
+                href="#"
+                >Pricing</a
+              >
+            </li>
+          </ul>
+          <div
+            class="relative flex h-full items-center text-gray-100 hover:text-white"
+            data-testid="UserBox"
+          >
+            <div role="button">
+              <div
+                class="flex items-center whitespace-nowrap px-2 xl:px-4"
+                data-testid="UserBoxNotAuthenticatedInner"
+              >
+                <div class="mr-1">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="circle-user"
+                    class="svg-inline--fa fa-circle-user fa-1x"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
+                    ></path>
+                  </svg>
+                </div>
+                Sign in
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header End -->
+
+    <!--============
+     Search Bar
+     ==============-->
+    <div
+      class="flex h-full w-full shrink justify-center bg-primary sm:h-auto sm:px-20 hidden"
+      id="search-panel"
+    >
+      <div class="relative w-220 max-w-full pt-7.5 sm:py-12.5 mx-auto">
+        <form class="relative" id="global-search-form">
+          <div class="px-5 sm:px-0">
+            <div
+              class="relative w-full"
+              tabindex="-1"
+              role="presentation"
+              data-testid="InputControlTemplate"
+            >
+              <div
+                class="flex w-full items-stretch border rounded py-1 pl-1 pr-3 sm:pr-6 border-t-transparent !rounded-full bg-white border-gray-100 border-none"
+              >
+                <div class="flex items-center">
+                  <div class="mr-5">
+                    <div class="relative">
+                      <button
+                        type="button"
+                        class="flex w-30 items-center justify-between rounded-full py-2.5 transition-all duration-300 sm:w-40 sm:px-6 bg-gray-50 hover:bg-gray-100 text-black px-3.5"
+                      >
+                        <span
+                          class="whitespace-nowrap text-sm font-medium leading-4"
+                          style="opacity: 1; transform: none"
+                          >Music</span
+                        ><span
+                          ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fal"
+                            data-icon="chevron-down"
+                            class="svg-inline--fa fa-chevron-down transition-all duration-300 text-primary"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M267.3 395.3c-6.2 6.2-16.4 6.2-22.6 0l-192-192c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L256 361.4 436.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-192 192z"
+                            ></path></svg
+                        ></span>
+                      </button>
+                      <div data-testid="PopupMenu">
+                        <div
+                          data-popup-menu-id="entity-select"
+                          class="invisible absolute z-uppermost overflow-hidden opacity-0 transition-all sm:animate-fastFadeIn sm:overflow-visible w-0 sm:w-auto sm:invisible sm:opacity-0 right-0 top-full mt-3"
+                        >
+                          <ul
+                            class="cursor-default rounded-lg shadow-xl max-h-120 overflow-y-auto min-w-40 py-1 bg-white"
+                            role="menu"
+                          >
+                            <li
+                              role="presentation"
+                              class="flex"
+                              data-testid="PopupMenuItem"
+                            >
+                              <button
+                                class="flex grow items-center py-3 px-4 whitespace-nowrap text-sm cursor-pointer text-primary bg-gray-25 font-medium"
+                                type="button"
+                                role="menuitem"
+                                aria-current="true"
+                              >
+                                Music<span class="ml-auto"
+                                  ><svg
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    data-prefix="fas"
+                                    data-icon="check"
+                                    class="svg-inline--fa fa-check"
+                                    role="img"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                  >
+                                    <path
+                                      fill="currentColor"
+                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                                    ></path></svg
+                                ></span>
+                              </button>
+                            </li>
+                            <li
+                              role="presentation"
+                              class="flex"
+                              data-testid="PopupMenuItem"
+                            >
+                              <button
+                                class="flex grow items-center py-3 px-4 whitespace-nowrap text-sm cursor-pointer text-primary bg-white font-normal"
+                                type="button"
+                                role="menuitem"
+                                aria-current="true"
+                              >
+                                Sound Effects
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-auto w-full flex items-center">
+                  <label
+                    class="pointer-events-none absolute mb-0 flex w-full text-gray-100 -top-1.5 left-0 before:pointer-events-none before:mt-1.5 before:block before:h-1 before:w-4 before:rounded-tl before:border before:border-x-0 before:border-b-0 before:border-transparent before:content-[&quot;&quot;] after:pointer-events-none after:mt-1.5 after:block after:h-1 after:w-4 after:grow after:rounded-tr after:border after:border-x-0 after:border-b-0 after:border-transparent after:content-[&quot;&quot;]"
+                    data-testid="-label"
+                  ></label
+                  ><input
+                    autocomplete="off"
+                    type="text"
+                    placeholder="Search mood, genre or any keyword"
+                    class="flex w-full grow bg-transparent shadow-none outline-none focus:outline-none focus:ring-0 text-base leading-none text-gray-700 placeholder:text-gray-100 h-full p-0"
+                    value=""
+                  />
+                </div>
+                <div class="flex items-center">
+                  <div class="ml-3 flex items-center">
+                    <button
+                      aria-label="search"
+                      type="button"
+                      class="p-1 sm:p-1.5"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="far"
+                        data-icon="magnifying-glass"
+                        class="svg-inline--fa fa-magnifying-glass text-gray-500"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M368 208A160 160 0 1 0 48 208a160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1L505 471c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L337.1 371.1z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 left-full flex items-center px-5">
+            <button
+              type="button"
+              class="flex justify-center items-center disabled:cursor-not-allowed disabled:text-primary disabled:bg-gray-300 disabled:border-gray-300 transition-colors disabled:text-gray-300 bg-transparent disabled:bg-transparent text-gray-200 underline hover:text-white p-0 text-sm leading-4"
+              id="btn-close"
+            >
+              <span
+                class="relative flex min-h-5 items-center justify-center gap-1"
+                ><span class="whitespace-nowrap">Close</span></span
+              >
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--============
+    Search Bar End
+    ==============-->
+
+    <!-- =========== Sidebar ========= -->
+    <div class="sidebar-wrapper">
+      <aside class="fixed z-999 h-full overflow-hidden bg-black sidebar">
+        <div class="min-w-max py-10 px-5 sm:pr-5 sm:pt-20 sm:pl-15">
+          <div class="flex h-full">
+            <div class="w-full block">
+              <div
+                class="flex h-full flex-col justify-between overflow-y-auto scrollbar-hide"
+                data-testid="SidebarInner"
+              >
+                <div>
+                  <ul class="sm:mb-15" data-testid="PrimaryMenu">
+                    <li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        class="border-b border-gray-500 py-3.5 text-lg text-gray-50 transition-all duration-300 hover:text-white sm:justify-start sm:border-b-0 sm:py-2 sm:text-4xl sm:font-bold sm:text-white sm:hover:text-accent"
+                        role="link"
+                        href="/library"
+                        >Library</a
+                      >
+                    </li>
+                    <li
+                      class="h-full w-full hidden sm:block"
+                      data-testid="MenuItem"
+                    >
+                      <a
+                        data-testid="Link"
+                        class="border-b border-gray-500 py-3.5 text-lg text-gray-50 transition-all duration-300 hover:text-white sm:justify-start sm:border-b-0 sm:py-2 sm:text-4xl sm:font-bold sm:text-white sm:hover:text-accent"
+                        role="link"
+                        href="/spotlight/collection"
+                        >Spotlight</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="mt-15 sm:mt-0" data-testid="AdvancedMenu">
+                    <div
+                      class="text-sm font-medium uppercase text-gray-200 sm:hidden"
+                    >
+                      More
+                    </div>
+                    <ul>
+                      <span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 hidden sm:flex"
+                        role="link"
+                        aria-label="enterprise"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full hidden sm:block"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            href="/enterprise"
+                            >Business</a
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="enterprise"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:hidden"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            href="/enterprise"
+                            >Business</a
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 hidden sm:flex"
+                        role="link"
+                        aria-label="blog"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full hidden sm:block"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            href="/blog/"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            >Artlist Blog</a
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 hidden sm:flex"
+                        role="link"
+                        aria-label="academy"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full hidden sm:block"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            href="/academy/"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            >Artlist Academy</a
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="spotlight"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:hidden"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            href="/spotlight/collection"
+                            >Spotlight</a
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="resources"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:w-auto sm:hidden"
+                          data-testid="MenuItem"
+                        >
+                          <span
+                            class="block cursor-pointer py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            data-testid="renderItemNoUrlWrapper"
+                            >Resources</span
+                          >
+                        </li>
+                        <span class="ml-3"
+                          ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="chevron-down"
+                            class="svg-inline--fa fa-chevron-down fa-xs"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            ></path></svg></span
+                      ></span>
+                      <ul class="text-gray-100" data-testid="Submenu">
+                        <span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="blog"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="/blog/"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Artlist Blog</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="academy"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="/academy/"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Artlist Academy</a
+                              >
+                            </li></span
+                          ></span
+                        >
+                      </ul>
+                      <span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="spotlight"
+                        style="margin-left: 0px"
+                      ></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="enterprise"
+                        style="margin-left: 0px"
+                      ></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                        role="link"
+                        aria-label="licenseAndTerms"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:w-auto"
+                          data-testid="MenuItem"
+                        >
+                          <span
+                            class="block cursor-pointer py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            data-testid="renderItemNoUrlWrapper"
+                            >License &amp; Terms</span
+                          >
+                        </li>
+                        <span class="ml-3"
+                          ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="chevron-down"
+                            class="svg-inline--fa fa-chevron-down fa-xs"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            ></path></svg></span
+                      ></span>
+                      <ul class="text-gray-100" data-testid="Submenu">
+                        <span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="artlistLicense"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                role="link"
+                                target="_blank"
+                                href="https://artlist.io/help-center/privacy-terms/artlist-license"
+                                >Artlist License</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="termsOfUse"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                role="link"
+                                target="_blank"
+                                href="https://artlist.io/help-center/privacy-terms/terms-of-use"
+                                >Terms of Use</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="copyrightPolicy"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                role="link"
+                                target="_blank"
+                                href="https://artlist.io/help-center/privacy-terms/copyright-policy"
+                                >Copyright Policy</a
+                              >
+                            </li></span
+                          ></span
+                        >
+                      </ul>
+                      <span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                        role="link"
+                        aria-label="help"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:w-auto"
+                          data-testid="MenuItem"
+                        >
+                          <span
+                            class="block cursor-pointer py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            data-testid="renderItemNoUrlWrapper"
+                            >Help</span
+                          >
+                        </li>
+                        <span class="ml-3"
+                          ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="chevron-down"
+                            class="svg-inline--fa fa-chevron-down fa-xs"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            ></path></svg></span
+                      ></span>
+                      <ul class="text-gray-100" data-testid="Submenu">
+                        <span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="helpCenter"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="/api/help-center-redirect"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Help Center</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="aboutUs"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                role="link"
+                                href="/about-us"
+                                >About Us</a
+                              >
+                            </li></span
+                          ></span
+                        >
+                      </ul>
+                      <span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                        role="link"
+                        aria-label="joinUs"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:w-auto"
+                          data-testid="MenuItem"
+                        >
+                          <span
+                            class="block cursor-pointer py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            data-testid="renderItemNoUrlWrapper"
+                            >Join Us</span
+                          >
+                        </li>
+                        <span class="ml-3"
+                          ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="chevron-down"
+                            class="svg-inline--fa fa-chevron-down fa-xs"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            ></path></svg></span
+                      ></span>
+                      <ul class="text-gray-100" data-testid="Submenu">
+                        <span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="becomeMusician"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="/home/application"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Become a Musician</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="becomeFilmmaker"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="https://artgrid.io/become-filmmaker"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Become a Filmmaker</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="becomeProducer"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="https://forms.monday.com/forms/0c6ddd1ec73993f3c0480d453afc9e65?r=use1"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Become a Template Artist</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="becomeAmbassador"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="/lp/ambassador-program"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Become an Ambassador</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="workWithUs"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="https://www.artlistjobs.io"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Work With Us</a
+                              >
+                            </li></span
+                          ></span
+                        >
+                      </ul>
+                      <span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="accessibility"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:w-auto sm:hidden"
+                          data-testid="MenuItem"
+                        >
+                          <span
+                            class="block cursor-pointer py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            data-acsb-custom-trigger="true"
+                            data-testid="renderItemNoUrlWrapper"
+                            >Accessibility</span
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="privacyPolicy"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:hidden"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            target="_blank"
+                            href="https://artlist.io/help-center/privacy-terms/privacy-policy"
+                            >Privacy Policy</a
+                          >
+                        </li></span
+                      >
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <ul class="mt-5.5 sm:mt-0" data-testid="TertiaryMenu">
+                    <li
+                      class="h-full w-full sm:w-auto hidden sm:block"
+                      data-testid="MenuItem"
+                    >
+                      <span
+                        class="block cursor-pointer py-3.5 text-lg text-gray-100 hover:text-white sm:py-2 sm:text-sm sm:text-gray-50"
+                        role="link"
+                        data-acsb-custom-trigger="true"
+                        data-testid="renderItemNoUrlWrapper"
+                        >Accessibility</span
+                      >
+                    </li>
+                    <li
+                      class="h-full w-full hidden sm:block"
+                      data-testid="MenuItem"
+                    >
+                      <a
+                        data-testid="Link"
+                        class="py-3.5 text-lg text-gray-100 hover:text-white sm:py-2 sm:text-sm sm:text-gray-50"
+                        role="link"
+                        target="_blank"
+                        href="https://artlist.io/help-center/privacy-terms/privacy-policy"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li
+                      class="h-full w-full sm:w-auto sm:hidden"
+                      data-testid="MenuItem"
+                    >
+                      <span
+                        class="block cursor-pointer py-3.5 text-lg text-gray-100 hover:text-white sm:py-2 sm:text-sm sm:text-gray-50"
+                        role="link"
+                        data-testid="renderItemNoUrlWrapper"
+                        >Sign Out</span
+                      >
+                    </li>
+                  </ul>
+                  <div class="mt-5.5">
+                    <div
+                      class="mb-6.5 mt-17.5 text-sm font-medium uppercase text-gray-200 sm:hidden"
+                    >
+                      Follow Us
+                    </div>
+                    <ul class="flex items-center gap-5">
+                      <li id="YouTube" aria-label="YouTube">
+                        <a
+                          title="YouTube"
+                          data-testid="Link"
+                          href="https://www.youtube.com/channel/UCXNK0IHTX0BoktdtKjqIWoA"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/youtube.svg"
+                            alt="YouTube"
+                        /></a>
+                      </li>
+                      <li id="Instagram" aria-label="Instagram">
+                        <a
+                          title="Instagram"
+                          data-testid="Link"
+                          href="https://www.instagram.com/artlist.io/"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/instagram.svg"
+                            alt="Instagram"
+                        /></a>
+                      </li>
+                      <li id="Facebook" aria-label="Facebook">
+                        <a
+                          title="Facebook"
+                          data-testid="Link"
+                          href="https://www.facebook.com/Artlist.io"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/facebook.svg"
+                            alt="Facebook"
+                        /></a>
+                      </li>
+                      <li id="TikTok" aria-label="TikTok">
+                        <a
+                          title="TikTok"
+                          data-testid="Link"
+                          href="https://www.tiktok.com/@artlist.io"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/tiktok.svg"
+                            alt="TikTok"
+                        /></a>
+                      </li>
+                      <li id="Twitter" aria-label="Twitter">
+                        <a
+                          title="Twitter"
+                          data-testid="Link"
+                          href="https://twitter.com/Artlist_io"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/x.svg"
+                            alt="Twitter"
+                        /></a>
+                      </li>
+                      <li id="Spotify" aria-label="Spotify">
+                        <a
+                          title="Spotify"
+                          data-testid="Link"
+                          href="https://open.spotify.com/user/npl7q3ahkoq8j8xthbdzxzikr?si=63fae9b66ad64e66"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/spotify.svg"
+                            alt="Spotify"
+                        /></a>
+                      </li>
+                      <li id="LinkedIn" aria-label="LinkedIn">
+                        <a
+                          title="LinkedIn"
+                          data-testid="Link"
+                          href="https://il.linkedin.com/company/art-list"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/linkedin.svg"
+                            alt="LinkedIn"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hidden">
+              <div
+                class=""
+                data-testid="AnimationWrapper"
+                style="transform: translateX(100%)"
+              >
+                <div
+                  class="flex items-center font-normal text-gray-100"
+                  role="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-xs"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                    ></path></svg
+                  ><span class="pl-2.5 text-lg"></span>
+                </div>
+                <ul class="mt-2"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- ============ Sidebar End =========== -->
+
+    <!-- Main Content -->
+    <main class="h-full styles_contentWrapper__EBkYm">
+      <div class="relative h-full" data-testid="AccountPage">
+        <div class="relative text-white lg:grow p-10 lg:px-50 lg:py-20">
+          <div class="mb-10 flex text-2.5xl font-bold">Account</div>
+          <div class="sm:px-5 md:px-0">
+            <div data-testid="Navigation">
+              <div
+                class="mb-5 lg:mb-10"
+                data-testid="ScrollMask"
+                style="
+                  mask-image: linear-gradient(
+                    90deg,
+                    rgb(0, 0, 0),
+                    black 80px,
+                    black calc(100% - 80px),
+                    rgba(0, 0, 0, 0)
+                  );
+                "
+              >
+                <div class="MuiTabs-root mui-style-1v63uxb">
+                  <div
+                    class="MuiTabs-scrollableX MuiTabs-hideScrollbar mui-style-oqr85h"
+                    style="
+                      width: 99px;
+                      height: 99px;
+                      position: absolute;
+                      top: -9999px;
+                      overflow: scroll;
+                    "
+                  ></div>
+                  <div
+                    class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX mui-style-1t0s2fz"
+                    style="margin-bottom: 0px"
+                  >
+                    <div class="flex gap-8" role="tablist">
+                      <a
+                        tabindex="0"
+                        role="link"
+                        aria-selected="true"
+                        data-testid="Link"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected mui-style-12ni7y7"
+                        href="profile.html"
+                        ><div class="flex items-center">Profile</div></a
+                      ><a
+                        tabindex="-1"
+                        role="link"
+                        aria-selected="false"
+                        data-testid="Link"
+                        class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary mui-style-12ni7y7"
+                        href="plan-and-billings.html"
+                        ><div class="flex items-center">
+                          Plan &amp; Billings
+                        </div></a
+                      >
+                    </div>
+                    <span
+                      class="MuiTabs-indicator mui-style-10v6cbe"
+                      style="left: 0px; width: 46.875px"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative flex min-h-full flex-col justify-between">
+            <div class="md:max-w-205" data-testid="ProfileTab">
+              <div data-test-id="account-page__personal-info-section">
+                <div class="">
+                  <form data-testid="InfoForm">
+                    <div class="mt-7.5 space-y-10">
+                      <div
+                        class="flex items-center gap-2"
+                        data-test-id="account-page__personal-info__form-fields__fullName"
+                      >
+                        <div
+                          class="relative w-full"
+                          tabindex="-1"
+                          role="presentation"
+                          data-testid="InputControlTemplate"
+                        >
+                          <div
+                            class="rounded py-3 sm:py-4 border-t-transparent border-gray-100"
+                          >
+                            <div class="h-auto w-full flex items-center">
+                              <label
+                                class="pointer-events-none absolute mb-0 flex w-full text-gray-100 -top-1.5 left-0 before:border-t-gray-100 after:border-t-gray-100"
+                                data-testid="Full Name-label"
+                                ><span
+                                  class="truncate transition-all duration-100 text-sm leading-tight leading-5 animate-floatOutlinedLabel"
+                                  >Full Name</span
+                                ></label
+                              ><input
+                                data-testid=""
+                                aria-label=""
+                                name=""
+                                type="text"
+                                disabled=""
+                                placeholder=""
+                                class="flex w-full grow bg-transparent text-base shadow-none outline-none focus:outline-none focus:ring-0 text-gray-100 placeholder:text-sm placeholder:text-gray-200 h-4.5 p-0 leading-none transition-[background-color,color] delay-[0s] duration-[600000s]"
+                                value="Shofiul Alam"
+                              />
+                            </div>
+                            <div
+                              class="flex items-center"
+                              data-testid="EndSlot"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex items-center gap-2"
+                        data-test-id="account-page__personal-info__form-fields__email"
+                      >
+                        <div
+                          class="relative w-full"
+                          tabindex="-1"
+                          role="presentation"
+                          data-testid="InputControlTemplate"
+                        >
+                          <div
+                            class="rounded py-3 sm:py-4 border-t-transparent border-gray-100"
+                          >
+                            <div class="h-auto w-full flex items-center">
+                              <label
+                                class="pointer-events-none absolute mb-0 flex w-full text-gray-100 -top-1.5 left-0 before:border-t-gray-100 after:border-t-gray-100"
+                                data-testid="Email-label"
+                                ><span
+                                  class="truncate transition-all duration-100 text-sm leading-tight leading-5 animate-floatOutlinedLabel"
+                                  >Email</span
+                                ></label
+                              ><input
+                                data-testid=""
+                                aria-label=""
+                                name=""
+                                type="email"
+                                disabled=""
+                                placeholder=""
+                                class="flex w-full grow bg-transparent text-base shadow-none outline-none focus:outline-none focus:ring-0 text-gray-100 placeholder:text-sm placeholder:text-gray-200 h-4.5 p-0 leading-none transition-[background-color,color] delay-[0s] duration-[600000s]"
+                                value="shoalamdu@gmail.com"
+                              />
+                            </div>
+                            <div
+                              class="flex items-center"
+                              data-testid="EndSlot"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex w-max flex-col">
+                      <span
+                        role="link"
+                        class="mt-8 text-sm text-gray-50 underline"
+                        >Click to change password</span
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="mt-17.5">
+                <div class="flex flex-col" data-testid="SubscriptionAndLicense">
+                  <div
+                    class="flex flex-wrap justify-between"
+                    data-testid="SectionTitle"
+                  >
+                    <div class="text-lg font-bold leading-5 text-white">
+                      My subscription
+                    </div>
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-lg bg-gradient-to-r from-accent to-[#FFF3B9] p-px mt-6 border border-yellow-400 border-1"
+                  >
+                    <div class="rounded-lg border-transparent bg-primary">
+                      <div class="flex flex-col gap-6 px-6 py-7.5">
+                        <div
+                          class="flex flex-col gap-1"
+                          data-test-id="account-page__subscription-section"
+                        >
+                          <div
+                            class="flex flex-col items-start justify-between gap-1 md:flex-row"
+                          >
+                            <h3 class="m-0 text-2xl font-bold">Trial</h3>
+                            <button
+                              type="button"
+                              class="ease font-bold text-accent transition-all duration-300 hover:text-white"
+                            >
+                              Subscribe to get unlimited downloads
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="flex w-full flex-col items-center justify-between border-t border-solid border-gray-400 pt-4 md:flex-row"
+                        >
+                          <div class="flex items-center gap-[6px]">
+                            <div
+                              class="relative -mr-2"
+                              data-testid="CreditsCircle"
+                              style="height: 40px; width: 40px; scale: 0.4"
+                            >
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 18px;
+                                  top: -2px;
+                                  rotate: 0deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 28px;
+                                  top: 0.679492px;
+                                  rotate: 30deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 35.3205px;
+                                  top: 8px;
+                                  rotate: 60deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 38px;
+                                  top: 18px;
+                                  rotate: 90deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 35.3205px;
+                                  top: 28px;
+                                  rotate: 120deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 28px;
+                                  top: 35.3205px;
+                                  rotate: 150deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 18px;
+                                  top: 38px;
+                                  rotate: 180deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 8px;
+                                  top: 35.3205px;
+                                  rotate: 210deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 0.679492px;
+                                  top: 28px;
+                                  rotate: 240deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: -2px;
+                                  top: 18px;
+                                  rotate: 270deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 0.679492px;
+                                  top: 8px;
+                                  rotate: 300deg;
+                                "
+                              ></div>
+                              <div
+                                class="absolute rounded-full bg-gray-50"
+                                data-testid="CreditsCircleDot"
+                                style="
+                                  height: 4px;
+                                  width: 6px;
+                                  left: 8px;
+                                  top: 0.679492px;
+                                  rotate: 330deg;
+                                "
+                              ></div>
+                            </div>
+                            <span
+                              class="text-sm font-medium leading-[140%] tracking-[-0.056px] text-white"
+                              >Voiceover credits remaining</span
+                            ><span
+                              class="text-sm font-medium leading-[20px] tracking-[0.056px] text-gray-100"
+                              >400 / 400</span
+                            >
+                          </div>
+                          <div
+                            class="flex flex-col gap-1 sm:flex-row md:items-center"
+                          >
+                            <span
+                              class="text-sm font-medium leading-[20px] tracking-[0.056px] text-gray-100"
+                              >Unlock 50,000 credits when you</span
+                            >
+                            <a
+                              data-testid="Link"
+                              class="text-sm font-medium leading-[20px] tracking-[0.056px] text-white underline"
+                              role="link"
+                              href="/page/pricing/max"
+                              >subscribe Now</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <ul
+                        class="flex flex-col gap-2.5 border-t border-gray-400 px-6 py-7.5"
+                        data-testid="FeaturesList"
+                      >
+                        <li class="flex items-center gap-2.5">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="check"
+                            class="svg-inline--fa fa-check fa-1x text-accent"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            ></path></svg
+                          ><span>Watermarked music and footage</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="check"
+                            class="svg-inline--fa fa-check fa-1x text-accent"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            ></path></svg
+                          ><span
+                            >Save and sort assets to fit your projects</span
+                          >
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="check"
+                            class="svg-inline--fa fa-check fa-1x text-accent"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            ></path></svg
+                          ><span>Share your curated collections</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--============ Footer ================-->
+
+    <footer class="bg-gray-700" data-testid="Footer">
+      <div class="container">
+        <div
+          class="grid grid-rows-1 gap-10 py-10 lg:grid-cols-3 lg:gap-14 lg:pb-0 xl:gap-28"
+        >
+          <div class="text-gray-200">
+            <div class="text-gray-100">
+              <div class="flex h-full items-center" data-testid="Logo">
+                <a class="flex h-full items-center" href="/"
+                  ><span class="w-17" aria-label="Home Page" role="link">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 47 13"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M30.5454 1.36828C30.5454 2.12396 29.9328 2.73655 29.1771 2.73655C28.4214 2.73655 27.8088 2.12396 27.8088 1.36828C27.8088 0.612598 28.4214 0 29.1771 0C29.9328 0 30.5454 0.612598 30.5454 1.36828ZM26.6818 12.2524H24.3134V0.508286H26.6818V12.2524ZM23.1691 12.2524V10.1788H21.9933C21.3718 10.1788 21.1366 9.90785 21.1366 9.40022V5.62534H23.1187V3.62885H21.1366V1.21293H18.7682L18.7705 3.62885L17.3444 3.63266L17.3404 5.62534H18.7682V9.7861C18.7682 11.4303 19.5913 12.2524 21.2374 12.2524H23.1691ZM16.1379 3.62885C14.7941 3.62885 14.1222 4.14895 13.6519 4.9207L13.4323 3.63266H11.2835V12.2567H13.6539V8.02656C13.6539 6.71794 14.1894 5.6658 15.6003 5.6658H16.5543V3.63266L16.1379 3.62885ZM27.995 12.2524H30.3802V3.72521H27.995V12.2524ZM35.5116 12.353C33.1096 12.353 31.4802 11.2289 31.3795 9.38345H33.6303C33.7143 10.1384 34.3694 10.6585 35.5284 10.6585C36.5194 10.6585 37.1241 10.3397 37.1241 9.73577C37.1241 9.05717 36.5789 8.98541 35.2934 8.8162L35.142 8.79624C33.1264 8.56136 31.5642 8.10838 31.5642 6.32999C31.5642 4.61871 33.0592 3.49463 35.2764 3.51141C37.5944 3.51141 39.1902 4.53482 39.3077 6.29643H37.0401C36.9729 5.60857 36.3178 5.18914 35.3604 5.18914C34.4365 5.18914 33.8319 5.52468 33.8319 6.07833C33.8319 6.71115 34.5232 6.79471 35.6931 6.93611L35.8139 6.95075C37.796 7.15207 39.4421 7.60506 39.4421 9.55122C39.4421 11.2625 37.8296 12.353 35.5116 12.353ZM45.7217 12.2524V10.1788H44.5459C43.9244 10.1788 43.6892 9.90785 43.6892 9.40023V5.62535H45.6713V3.62886H43.6892V1.21294H41.3208L41.3231 3.62886L39.897 3.63267L39.893 5.62535H41.3208V9.78611C41.3208 11.4303 42.1439 12.2524 43.79 12.2524H45.7217ZM5.02751 12.247H2.14772H0V10.3357L3.49117 1.22374H6.70832L10.1946 10.3335V12.247H7.94583H7.10308H5.02751ZM7.67152 10.1609L5.09734 3.50719L2.48466 10.1609H7.67152Z"
+                      ></path></svg></span
+                ></a>
+              </div>
+            </div>
+            <div class="mt-4 font-medium">
+              Creative tools, built for creators.
+            </div>
+            <p class="mt-2 max-w-100 text-sm">
+              Our mission is to empower creators worldwide to tell their stories
+              through video. We bring opportunity to the creative industry
+              through powerful video editing software, professional digital
+              assets for video creation and accessible learning resources to
+              support you in achieving your vision.
+            </p>
+          </div>
+          <div class="lg:col-span-2">
+            <div
+              class="grid grid-cols-1 gap-1 sm:grid-cols-3 sm:gap-8 lg:float-right lg:grid-cols-4 lg:grid-rows-2 lg:pl-5"
+            >
+              <div
+                class="border-b border-gray-500 py-4 sm:border-0 sm:py-0 last:lg:-mt-20 lg:[&amp;:nth-child(2)]:row-span-2 lg:[&amp;:nth-child(1)]:row-span-2 lg:[&amp;:nth-child(4n)]:pl-10 lg:[&amp;:last-child]:pl-10"
+                data-testid="Submenu"
+              >
+                <strong class="mb-4 hidden font-semibold text-gray-100 sm:flex"
+                  >Products</strong
+                >
+                <div role="button" class="flex justify-between sm:hidden">
+                  <div class="font-semibold text-gray-100">Products</div>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="chevron-down"
+                    class="svg-inline--fa fa-chevron-down text-gray-100"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="sm:space-y-3">
+                  <span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="#"
+                        >Home</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="#"
+                        >Explore Tracks</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="#"
+                        >Artist and Album</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="#"
+                        >Download List</a
+                      >
+                    </li></span
+                  ><span
+                </ul>
+              </div>
+              <div
+                class="border-b border-gray-500 py-4 sm:border-0 sm:py-0 last:lg:-mt-20 lg:[&amp;:nth-child(2)]:row-span-2 lg:[&amp;:nth-child(1)]:row-span-2 lg:[&amp;:nth-child(4n)]:pl-10 lg:[&amp;:last-child]:pl-10"
+                data-testid="Submenu"
+              >
+                <strong class="mb-4 hidden font-semibold text-gray-100 sm:flex"
+                  >About</strong
+                >
+                <div role="button" class="flex justify-between sm:hidden">
+                  <div class="font-semibold text-gray-100">About</div>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="chevron-down"
+                    class="svg-inline--fa fa-chevron-down text-gray-100"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="sm:space-y-3">
+                  <span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        target="_blank"
+                        href="#"
+                        >About Us</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="/enterprise"
+                        >FAQs</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="/page/pricing/max"
+                        >Pricing</a
+                      >
+                    </li></span
+                  >
+                </ul>
+              </div>
+              <div
+                class="border-b border-gray-500 py-4 sm:border-0 sm:py-0 last:lg:-mt-20 lg:[&amp;:nth-child(2)]:row-span-2 lg:[&amp;:nth-child(1)]:row-span-2 lg:[&amp;:nth-child(4n)]:pl-10 lg:[&amp;:last-child]:pl-10"
+                data-testid="Submenu"
+              >
+                <strong class="mb-4 hidden font-semibold text-gray-100 sm:flex"
+                  >Resources</strong
+                >
+                <div role="button" class="flex justify-between sm:hidden">
+                  <div class="font-semibold text-gray-100">Resources</div>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="chevron-down"
+                    class="svg-inline--fa fa-chevron-down text-gray-100"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="sm:space-y-3">
+                  <span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        href="blog.html"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Blog</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                  >
+                    <li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        href="#"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Academy</a
+                      >
+                    </li></span
+                  >
+                </ul>
+              </div>
+              <div
+                class="border-b border-gray-500 py-4 sm:border-0 sm:py-0 lg:[&amp;:nth-child(2)]:row-span-2 lg:[&amp;:nth-child(1)]:row-span-2 lg:[&amp;:nth-child(4n)]:pl-10 lg:[&amp;:last-child]:pl-10"
+              >
+                <strong class="mb-4 hidden font-semibold text-gray-100 sm:flex"
+                  >License &amp; Terms</strong
+                >
+                <div role="button" class="flex justify-between sm:hidden">
+                  <div class="font-semibold text-gray-100">
+                    License &amp; Terms
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="chevron-down"
+                    class="svg-inline--fa fa-chevron-down text-gray-100"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="sm:space-y-3">
+                  <span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        target="_blank"
+                        href="#"
+                        >License</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        target="_blank"
+                        href="#"
+                        >Terms of Use</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        target="_blank"
+                        href="#"
+                        >Copyright Policy</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none h-0 opacity-0 duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        target="_blank"
+                        href="#"
+                        >Privacy Policy</a
+                      >
+                    </li></span
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:flex-row lg:justify-between">
+          <div
+            class="flex flex-col justify-start gap-3 py-5 sm:border-t sm:border-gray-300/70 lg:flex-row lg:justify-between"
+          >
+            <ul class="flex items-center gap-8">
+              <li id="YouTube" aria-label="YouTube">
+                <a
+                  title="YouTube"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/youtube.svg"
+                    alt="YouTube"
+                /></a>
+              </li>
+              <li id="Instagram" aria-label="Instagram">
+                <a
+                  title="Instagram"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/instagram.svg"
+                    alt="Instagram"
+                /></a>
+              </li>
+              <li id="Facebook" aria-label="Facebook">
+                <a
+                  title="Facebook"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/facebook.svg"
+                    alt="Facebook"
+                /></a>
+              </li>
+              <li id="TikTok" aria-label="TikTok">
+                <a
+                  title="TikTok"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/tiktok.svg"
+                    alt="TikTok"
+                /></a>
+              </li>
+              <li id="Twitter" aria-label="Twitter">
+                <a
+                  title="Twitter"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/x.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+              <li id="Spotify" aria-label="Spotify">
+                <a
+                  title="Spotify"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/spotify.svg"
+                    alt="Spotify"
+                /></a>
+              </li>
+              <li id="LinkedIn" aria-label="LinkedIn">
+                <a
+                  title="LinkedIn"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/linkedin.svg"
+                    alt="LinkedIn"
+                /></a>
+              </li>
+            </ul>
+            <ul class="flex gap-5 border-b-0 pt-0">
+              <li class="h-full w-full sm:w-auto" data-testid="MenuItem">
+                <span
+                  class="block cursor-pointer flex h-full items-center text-gray-200 transition-colors duration-300 ease-in-out hover:text-gray-50"
+                  role="button"
+                  data-acsb-custom-trigger="true"
+                  data-testid="renderItemNoUrlWrapper"
+                  tabindex="0"
+                  >Accessibility</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS File -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="assets/js/tailwind.js"></script> -->
+
+    <script>
+      $(document).ready(function () {
+        $("#search-icon").click(function () {
+          $("#search-panel").slideToggle("slow");
+        });
+
+        $("#btn-close").click(function () {
+          $("#search-panel").slideUp("slow");
+        });
+
+        //hamburger-menu
+        $(".hamburger-menu").click(function () {
+          $(this).toggleClass("change");
+          $(".sidebar").toggleClass("active");
+        });
+
+        $(document).click(function (event) {
+          if (
+            !$(event.target).closest(".sidebar").length &&
+            !$(event.target).closest(".hamburger-menu").length
+          ) {
+            $(".sidebar").removeClass("active");
+            $(".hamburger-menu").removeClass("change");
+          }
+        });
+
+        $(".sidebar").click(function (event) {
+          event.stopPropagation();
+        });
+      });
+    </script>
+  </body>
+</html>

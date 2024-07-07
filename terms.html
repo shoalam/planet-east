@@ -1,0 +1,2541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet East</title>
+    <link
+      rel="shortcut icon"
+      href="https://artlist.io/favicon-32x32.png?v=1"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <!--============
+     Header 
+     ==============-->
+
+    <header class="fixed h-12 w-full bg-gray-500 z-9999 top-0">
+      <div class="flex h-full justify-between">
+        <div class="flex h-full w-full sm:w-auto">
+          <div class="order-3 ml-auto sm:order-1 sm:ml-0">
+            <button
+              class="group flex h-full flex-col items-center justify-center px-3.5 hamburger-menu"
+              aria-label="Menu"
+            >
+              <div
+                class="h-px w-4 m-0.5 bg-white transition ease duration-300 opacity-50 line line1"
+              ></div>
+              <div
+                class="h-px w-4 m-0.5 bg-white transition ease duration-300 opacity-50 line line2"
+              ></div>
+              <div
+                class="h-px w-4 m-0.5 bg-white transition ease duration-300 opacity-50 line line3"
+              ></div>
+            </button>
+          </div>
+          <div
+            class="order-1 ml-4 flex items-center text-accent sm:order-2 md:ml-0"
+          >
+            <div class="flex h-full items-center">
+              <a class="flex h-full items-center" href="index.html"
+                ><span class="w-14" aria-label="Home Page" role="link"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 47 13"
+                    fill="var(--primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M30.5454 1.36828C30.5454 2.12396 29.9328 2.73655 29.1771 2.73655C28.4214 2.73655 27.8088 2.12396 27.8088 1.36828C27.8088 0.612598 28.4214 0 29.1771 0C29.9328 0 30.5454 0.612598 30.5454 1.36828ZM26.6818 12.2524H24.3134V0.508286H26.6818V12.2524ZM23.1691 12.2524V10.1788H21.9933C21.3718 10.1788 21.1366 9.90785 21.1366 9.40022V5.62534H23.1187V3.62885H21.1366V1.21293H18.7682L18.7705 3.62885L17.3444 3.63266L17.3404 5.62534H18.7682V9.7861C18.7682 11.4303 19.5913 12.2524 21.2374 12.2524H23.1691ZM16.1379 3.62885C14.7941 3.62885 14.1222 4.14895 13.6519 4.9207L13.4323 3.63266H11.2835V12.2567H13.6539V8.02656C13.6539 6.71794 14.1894 5.6658 15.6003 5.6658H16.5543V3.63266L16.1379 3.62885ZM27.995 12.2524H30.3802V3.72521H27.995V12.2524ZM35.5116 12.353C33.1096 12.353 31.4802 11.2289 31.3795 9.38345H33.6303C33.7143 10.1384 34.3694 10.6585 35.5284 10.6585C36.5194 10.6585 37.1241 10.3397 37.1241 9.73577C37.1241 9.05717 36.5789 8.98541 35.2934 8.8162L35.142 8.79624C33.1264 8.56136 31.5642 8.10838 31.5642 6.32999C31.5642 4.61871 33.0592 3.49463 35.2764 3.51141C37.5944 3.51141 39.1902 4.53482 39.3077 6.29643H37.0401C36.9729 5.60857 36.3178 5.18914 35.3604 5.18914C34.4365 5.18914 33.8319 5.52468 33.8319 6.07833C33.8319 6.71115 34.5232 6.79471 35.6931 6.93611L35.8139 6.95075C37.796 7.15207 39.4421 7.60506 39.4421 9.55122C39.4421 11.2625 37.8296 12.353 35.5116 12.353ZM45.7217 12.2524V10.1788H44.5459C43.9244 10.1788 43.6892 9.90785 43.6892 9.40023V5.62535H45.6713V3.62886H43.6892V1.21294H41.3208L41.3231 3.62886L39.897 3.63267L39.893 5.62535H41.3208V9.78611C41.3208 11.4303 42.1439 12.2524 43.79 12.2524H45.7217ZM5.02751 12.247H2.14772H0V10.3357L3.49117 1.22374H6.70832L10.1946 10.3335V12.247H7.94583H7.10308H5.02751ZM7.67152 10.1609L5.09734 3.50719L2.48466 10.1609H7.67152Z"
+                    ></path>
+                  </svg> </span
+              ></a>
+            </div>
+          </div>
+          <div class="order-2 sm:order-2">
+            <div class="flex h-full items-center justify-center pr-2 pl-3">
+              <div
+                class="flex items-center justify-center rounded-full p-2 transition-all duration-300 bg-gray-400 hover:bg-gray-500"
+                role="button"
+                data-sidebar-opener="search"
+                aria-label="Search"
+                id="search-icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="far"
+                  data-icon="magnifying-glass"
+                  class="svg-inline--fa fa-magnifying-glass fa-sm transition-all duration-300 text-white"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M368 208A160 160 0 1 0 48 208a160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1L505 471c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L337.1 371.1z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto hidden lg:flex">
+          <ul
+            class="flex h-full items-center gap-1 xl:gap-2 2xl:gap-6 4xl:gap-12"
+          >
+            <li class="h-full w-full">
+              <a
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-yellow-400 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100 text-white"
+                role="link"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="h-full w-full" data-testid="MenuItem">
+              <a
+                data-testid="Link"
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-gray-500 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100"
+                role="link"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="h-full w-full">
+              <a
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-gray-500 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100"
+                role="link"
+                href="#"
+                >Explore Tracks</a
+              >
+            </li>
+            <li class="h-full w-full" data-testid="MenuItem">
+              <a
+                data-testid="Link"
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-gray-500 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100"
+                role="link"
+                href="artist-album.html"
+                >Artist and Album</a
+              >
+            </li>
+            <li class="h-full w-full" data-testid="MenuItem">
+              <a
+                data-testid="Link"
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-gray-500 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100"
+                role="link"
+                href="#"
+                >Download List</a
+              >
+            </li>
+            <li class="h-full w-full">
+              <a
+                data-testid="Link"
+                class="group relative flex h-full items-center justify-center whitespace-nowrap border-b-4 border-gray-500 px-2 transition-none duration-300 hover:text-white 2xl:px-3.5 text-gray-100"
+                role="link"
+                href="#"
+                >FAQs</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="hidden h-full items-center justify-end gap-3 sm:flex sm:pr-5"
+        >
+          <button
+            type="button"
+            class="flex justify-center items-center font-bold rounded-full text-black transition-colors hover:text-primary bg-yellow-400 transition-all hover:bg-yellow-500 duration-300 py-1 px-5.5 text-sm leading-3"
+          >
+            <span
+              class="relative flex min-h-5 items-center justify-center gap-1"
+              ><span class="whitespace-nowrap">Start Free Now</span></span
+            >
+          </button>
+          <ul class="h-full">
+            <li class="h-full w-full">
+              <a
+                class="flex h-full items-center text-gray-100 transition-all duration-300 hover:text-white"
+                href="#"
+                >Pricing</a
+              >
+            </li>
+          </ul>
+          <div
+            class="relative flex h-full items-center text-gray-100 hover:text-white"
+            data-testid="UserBox"
+          >
+            <div role="button">
+              <div
+                class="flex items-center whitespace-nowrap px-2 xl:px-4"
+                data-testid="UserBoxNotAuthenticatedInner"
+              >
+                <div class="mr-1">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="circle-user"
+                    class="svg-inline--fa fa-circle-user fa-1x"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
+                    ></path>
+                  </svg>
+                </div>
+                Sign in
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--============
+       Header END
+       ==============-->
+
+    <!--============
+     Search Bar
+     ==============-->
+    <div
+      class="flex h-full w-full shrink justify-center bg-primary sm:h-auto sm:px-20 hidden"
+      id="search-panel"
+    >
+      <div class="relative w-220 max-w-full pt-7.5 sm:py-12.5 mx-auto">
+        <form class="relative" id="global-search-form">
+          <div class="px-5 sm:px-0">
+            <div
+              class="relative w-full"
+              tabindex="-1"
+              role="presentation"
+              data-testid="InputControlTemplate"
+            >
+              <div
+                class="flex w-full items-stretch border rounded py-1 pl-1 pr-3 sm:pr-6 border-t-transparent !rounded-full bg-white border-gray-100 border-none"
+              >
+                <div class="flex items-center">
+                  <div class="mr-5">
+                    <div class="relative">
+                      <button
+                        type="button"
+                        class="flex w-30 items-center justify-between rounded-full py-2.5 transition-all duration-300 sm:w-40 sm:px-6 bg-gray-50 hover:bg-gray-100 text-black px-3.5"
+                      >
+                        <span
+                          class="whitespace-nowrap text-sm font-medium leading-4"
+                          style="opacity: 1; transform: none"
+                          >Music</span
+                        ><span
+                          ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fal"
+                            data-icon="chevron-down"
+                            class="svg-inline--fa fa-chevron-down transition-all duration-300 text-primary"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M267.3 395.3c-6.2 6.2-16.4 6.2-22.6 0l-192-192c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L256 361.4 436.7 180.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-192 192z"
+                            ></path></svg
+                        ></span>
+                      </button>
+                      <div data-testid="PopupMenu">
+                        <div
+                          data-popup-menu-id="entity-select"
+                          class="invisible absolute z-uppermost overflow-hidden opacity-0 transition-all sm:animate-fastFadeIn sm:overflow-visible w-0 sm:w-auto sm:invisible sm:opacity-0 right-0 top-full mt-3"
+                        >
+                          <ul
+                            class="cursor-default rounded-lg shadow-xl max-h-120 overflow-y-auto min-w-40 py-1 bg-white"
+                            role="menu"
+                          >
+                            <li
+                              role="presentation"
+                              class="flex"
+                              data-testid="PopupMenuItem"
+                            >
+                              <button
+                                class="flex grow items-center py-3 px-4 whitespace-nowrap text-sm cursor-pointer text-primary bg-gray-25 font-medium"
+                                type="button"
+                                role="menuitem"
+                                aria-current="true"
+                              >
+                                Music<span class="ml-auto"
+                                  ><svg
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    data-prefix="fas"
+                                    data-icon="check"
+                                    class="svg-inline--fa fa-check"
+                                    role="img"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                  >
+                                    <path
+                                      fill="currentColor"
+                                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                                    ></path></svg
+                                ></span>
+                              </button>
+                            </li>
+                            <li
+                              role="presentation"
+                              class="flex"
+                              data-testid="PopupMenuItem"
+                            >
+                              <button
+                                class="flex grow items-center py-3 px-4 whitespace-nowrap text-sm cursor-pointer text-primary bg-white font-normal"
+                                type="button"
+                                role="menuitem"
+                                aria-current="true"
+                              >
+                                Sound Effects
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-auto w-full flex items-center">
+                  <label
+                    class="pointer-events-none absolute mb-0 flex w-full text-gray-100 -top-1.5 left-0 before:pointer-events-none before:mt-1.5 before:block before:h-1 before:w-4 before:rounded-tl before:border before:border-x-0 before:border-b-0 before:border-transparent before:content-[&quot;&quot;] after:pointer-events-none after:mt-1.5 after:block after:h-1 after:w-4 after:grow after:rounded-tr after:border after:border-x-0 after:border-b-0 after:border-transparent after:content-[&quot;&quot;]"
+                    data-testid="-label"
+                  ></label
+                  ><input
+                    autocomplete="off"
+                    type="text"
+                    placeholder="Search mood, genre or any keyword"
+                    class="flex w-full grow bg-transparent shadow-none outline-none focus:outline-none focus:ring-0 text-base leading-none text-gray-700 placeholder:text-gray-100 h-full p-0"
+                    value=""
+                  />
+                </div>
+                <div class="flex items-center">
+                  <div class="ml-3 flex items-center">
+                    <button
+                      aria-label="search"
+                      type="button"
+                      class="p-1 sm:p-1.5"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="far"
+                        data-icon="magnifying-glass"
+                        class="svg-inline--fa fa-magnifying-glass text-gray-500"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M368 208A160 160 0 1 0 48 208a160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1L505 471c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L337.1 371.1z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 left-full flex items-center px-5">
+            <button
+              type="button"
+              class="flex justify-center items-center disabled:cursor-not-allowed disabled:text-primary disabled:bg-gray-300 disabled:border-gray-300 transition-colors disabled:text-gray-300 bg-transparent disabled:bg-transparent text-gray-200 underline hover:text-white p-0 text-sm leading-4"
+              id="btn-close"
+            >
+              <span
+                class="relative flex min-h-5 items-center justify-center gap-1"
+                ><span class="whitespace-nowrap">Close</span></span
+              >
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--============
+    Search Bar End
+    ==============-->
+
+    <!-- =========== Sidebar ========= -->
+    <div class="sidebar-wrapper">
+      <aside class="fixed z-999 h-full overflow-hidden bg-black sidebar">
+        <div class="min-w-max py-10 px-5 sm:pr-5 sm:pt-20 sm:pl-15">
+          <div class="flex h-full">
+            <div class="w-full block">
+              <div
+                class="flex h-full flex-col justify-between overflow-y-auto scrollbar-hide"
+                data-testid="SidebarInner"
+              >
+                <div>
+                  <ul class="sm:mb-15" data-testid="PrimaryMenu">
+                    <li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        class="border-b border-gray-500 py-3.5 text-lg text-gray-50 transition-all duration-300 hover:text-white sm:justify-start sm:border-b-0 sm:py-2 sm:text-4xl sm:font-bold sm:text-white sm:hover:text-accent"
+                        role="link"
+                        href="/library"
+                        >Library</a
+                      >
+                    </li>
+                    <li
+                      class="h-full w-full hidden sm:block"
+                      data-testid="MenuItem"
+                    >
+                      <a
+                        data-testid="Link"
+                        class="border-b border-gray-500 py-3.5 text-lg text-gray-50 transition-all duration-300 hover:text-white sm:justify-start sm:border-b-0 sm:py-2 sm:text-4xl sm:font-bold sm:text-white sm:hover:text-accent"
+                        role="link"
+                        href="/spotlight/collection"
+                        >Spotlight</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="mt-15 sm:mt-0" data-testid="AdvancedMenu">
+                    <div
+                      class="text-sm font-medium uppercase text-gray-200 sm:hidden"
+                    >
+                      More
+                    </div>
+                    <ul>
+                      <span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 hidden sm:flex"
+                        role="link"
+                        aria-label="enterprise"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full hidden sm:block"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            href="/enterprise"
+                            >Business</a
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="enterprise"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:hidden"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            href="/enterprise"
+                            >Business</a
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 hidden sm:flex"
+                        role="link"
+                        aria-label="blog"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full hidden sm:block"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            href="/blog/"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            >Artlist Blog</a
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 hidden sm:flex"
+                        role="link"
+                        aria-label="academy"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full hidden sm:block"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            href="/academy/"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            >Artlist Academy</a
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="spotlight"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:hidden"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            href="/spotlight/collection"
+                            >Spotlight</a
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="resources"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:w-auto sm:hidden"
+                          data-testid="MenuItem"
+                        >
+                          <span
+                            class="block cursor-pointer py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            data-testid="renderItemNoUrlWrapper"
+                            >Resources</span
+                          >
+                        </li>
+                        <span class="ml-3"
+                          ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="chevron-down"
+                            class="svg-inline--fa fa-chevron-down fa-xs"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            ></path></svg></span
+                      ></span>
+                      <ul class="text-gray-100" data-testid="Submenu">
+                        <span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="blog"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="/blog/"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Artlist Blog</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="academy"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="/academy/"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Artlist Academy</a
+                              >
+                            </li></span
+                          ></span
+                        >
+                      </ul>
+                      <span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="spotlight"
+                        style="margin-left: 0px"
+                      ></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="enterprise"
+                        style="margin-left: 0px"
+                      ></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                        role="link"
+                        aria-label="licenseAndTerms"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:w-auto"
+                          data-testid="MenuItem"
+                        >
+                          <span
+                            class="block cursor-pointer py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            data-testid="renderItemNoUrlWrapper"
+                            >License &amp; Terms</span
+                          >
+                        </li>
+                        <span class="ml-3"
+                          ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="chevron-down"
+                            class="svg-inline--fa fa-chevron-down fa-xs"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            ></path></svg></span
+                      ></span>
+                      <ul class="text-gray-100" data-testid="Submenu">
+                        <span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="artlistLicense"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                role="link"
+                                target="_blank"
+                                href="https://artlist.io/help-center/privacy-terms/artlist-license"
+                                >Artlist License</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="termsOfUse"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                role="link"
+                                target="_blank"
+                                href="https://artlist.io/help-center/privacy-terms/terms-of-use"
+                                >Terms of Use</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="copyrightPolicy"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                role="link"
+                                target="_blank"
+                                href="https://artlist.io/help-center/privacy-terms/copyright-policy"
+                                >Copyright Policy</a
+                              >
+                            </li></span
+                          ></span
+                        >
+                      </ul>
+                      <span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                        role="link"
+                        aria-label="help"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:w-auto"
+                          data-testid="MenuItem"
+                        >
+                          <span
+                            class="block cursor-pointer py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            data-testid="renderItemNoUrlWrapper"
+                            >Help</span
+                          >
+                        </li>
+                        <span class="ml-3"
+                          ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="chevron-down"
+                            class="svg-inline--fa fa-chevron-down fa-xs"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            ></path></svg></span
+                      ></span>
+                      <ul class="text-gray-100" data-testid="Submenu">
+                        <span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="helpCenter"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="/api/help-center-redirect"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Help Center</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="aboutUs"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                role="link"
+                                href="/about-us"
+                                >About Us</a
+                              >
+                            </li></span
+                          ></span
+                        >
+                      </ul>
+                      <span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                        role="link"
+                        aria-label="joinUs"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:w-auto"
+                          data-testid="MenuItem"
+                        >
+                          <span
+                            class="block cursor-pointer py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            data-testid="renderItemNoUrlWrapper"
+                            >Join Us</span
+                          >
+                        </li>
+                        <span class="ml-3"
+                          ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="chevron-down"
+                            class="svg-inline--fa fa-chevron-down fa-xs"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            ></path></svg></span
+                      ></span>
+                      <ul class="text-gray-100" data-testid="Submenu">
+                        <span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="becomeMusician"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="/home/application"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Become a Musician</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="becomeFilmmaker"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="https://artgrid.io/become-filmmaker"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Become a Filmmaker</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="becomeProducer"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="https://forms.monday.com/forms/0c6ddd1ec73993f3c0480d453afc9e65?r=use1"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Become a Template Artist</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="becomeAmbassador"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="/lp/ambassador-program"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Become an Ambassador</a
+                              >
+                            </li></span
+                          ></span
+                        ><span
+                          class="pointer-events-none h-0 opacity-0 duration-200 block transition-all ease-in-out"
+                          ><span
+                            class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0"
+                            role="link"
+                            aria-label="workWithUs"
+                            style="margin-left: 0px"
+                            ><li class="h-full w-full" data-testid="MenuItem">
+                              <a
+                                data-testid="Link"
+                                href="https://www.artlistjobs.io"
+                                class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-100"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >Work With Us</a
+                              >
+                            </li></span
+                          ></span
+                        >
+                      </ul>
+                      <span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="accessibility"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:w-auto sm:hidden"
+                          data-testid="MenuItem"
+                        >
+                          <span
+                            class="block cursor-pointer py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            data-acsb-custom-trigger="true"
+                            data-testid="renderItemNoUrlWrapper"
+                            >Accessibility</span
+                          >
+                        </li></span
+                      ><span
+                        class="flex cursor-pointer items-center justify-between border-b border-gray-500 sm:justify-start sm:border-b-0 sm:hidden"
+                        role="link"
+                        aria-label="privacyPolicy"
+                        style="margin-left: 0px"
+                        ><li
+                          class="h-full w-full sm:hidden"
+                          data-testid="MenuItem"
+                        >
+                          <a
+                            data-testid="Link"
+                            class="py-3.5 text-lg transition-all duration-300 hover:text-white sm:py-2 sm:text-base text-gray-50"
+                            role="link"
+                            target="_blank"
+                            href="https://artlist.io/help-center/privacy-terms/privacy-policy"
+                            >Privacy Policy</a
+                          >
+                        </li></span
+                      >
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <ul class="mt-5.5 sm:mt-0" data-testid="TertiaryMenu">
+                    <li
+                      class="h-full w-full sm:w-auto hidden sm:block"
+                      data-testid="MenuItem"
+                    >
+                      <span
+                        class="block cursor-pointer py-3.5 text-lg text-gray-100 hover:text-white sm:py-2 sm:text-sm sm:text-gray-50"
+                        role="link"
+                        data-acsb-custom-trigger="true"
+                        data-testid="renderItemNoUrlWrapper"
+                        >Accessibility</span
+                      >
+                    </li>
+                    <li
+                      class="h-full w-full hidden sm:block"
+                      data-testid="MenuItem"
+                    >
+                      <a
+                        data-testid="Link"
+                        class="py-3.5 text-lg text-gray-100 hover:text-white sm:py-2 sm:text-sm sm:text-gray-50"
+                        role="link"
+                        target="_blank"
+                        href="https://artlist.io/help-center/privacy-terms/privacy-policy"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li
+                      class="h-full w-full sm:w-auto sm:hidden"
+                      data-testid="MenuItem"
+                    >
+                      <span
+                        class="block cursor-pointer py-3.5 text-lg text-gray-100 hover:text-white sm:py-2 sm:text-sm sm:text-gray-50"
+                        role="link"
+                        data-testid="renderItemNoUrlWrapper"
+                        >Sign Out</span
+                      >
+                    </li>
+                  </ul>
+                  <div class="mt-5.5">
+                    <div
+                      class="mb-6.5 mt-17.5 text-sm font-medium uppercase text-gray-200 sm:hidden"
+                    >
+                      Follow Us
+                    </div>
+                    <ul class="flex items-center gap-5">
+                      <li id="YouTube" aria-label="YouTube">
+                        <a
+                          title="YouTube"
+                          data-testid="Link"
+                          href="https://www.youtube.com/channel/UCXNK0IHTX0BoktdtKjqIWoA"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/youtube.svg"
+                            alt="YouTube"
+                        /></a>
+                      </li>
+                      <li id="Instagram" aria-label="Instagram">
+                        <a
+                          title="Instagram"
+                          data-testid="Link"
+                          href="https://www.instagram.com/artlist.io/"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/instagram.svg"
+                            alt="Instagram"
+                        /></a>
+                      </li>
+                      <li id="Facebook" aria-label="Facebook">
+                        <a
+                          title="Facebook"
+                          data-testid="Link"
+                          href="https://www.facebook.com/Artlist.io"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/facebook.svg"
+                            alt="Facebook"
+                        /></a>
+                      </li>
+                      <li id="TikTok" aria-label="TikTok">
+                        <a
+                          title="TikTok"
+                          data-testid="Link"
+                          href="https://www.tiktok.com/@artlist.io"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/tiktok.svg"
+                            alt="TikTok"
+                        /></a>
+                      </li>
+                      <li id="Twitter" aria-label="Twitter">
+                        <a
+                          title="Twitter"
+                          data-testid="Link"
+                          href="https://twitter.com/Artlist_io"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/x.svg"
+                            alt="Twitter"
+                        /></a>
+                      </li>
+                      <li id="Spotify" aria-label="Spotify">
+                        <a
+                          title="Spotify"
+                          data-testid="Link"
+                          href="https://open.spotify.com/user/npl7q3ahkoq8j8xthbdzxzikr?si=63fae9b66ad64e66"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/spotify.svg"
+                            alt="Spotify"
+                        /></a>
+                      </li>
+                      <li id="LinkedIn" aria-label="LinkedIn">
+                        <a
+                          title="LinkedIn"
+                          data-testid="Link"
+                          href="https://il.linkedin.com/company/art-list"
+                          class="text-white transition-colors duration-300 hover:text-accent"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          ><img
+                            class="h-5"
+                            src="https://artlist-dev.imgix.net/artlist/footer-social-icons/linkedin.svg"
+                            alt="LinkedIn"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hidden">
+              <div
+                class=""
+                data-testid="AnimationWrapper"
+                style="transform: translateX(100%)"
+              >
+                <div
+                  class="flex items-center font-normal text-gray-100"
+                  role="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-xs"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                    ></path></svg
+                  ><span class="pl-2.5 text-lg"></span>
+                </div>
+                <ul class="mt-2"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- ============ Sidebar End =========== -->
+
+    <!-- Main Content -->
+    <main class="mainLayout">
+      <section class="innerSearchSection">
+        <ul class="breadcrumbs">
+          <li class="item">
+            <a href="https://help.artlist.io/" class="link">
+              Back to Help Center</a
+            >
+          </li>
+
+          <li class="item">
+            <a href="/help-center/privacy-terms/" class="link"
+              >Privacy &amp; Terms</a
+            >
+          </li>
+
+          <li class="item">Terms of Use</li>
+        </ul>
+      </section>
+      <section class="headTitleSection">
+        <div class="containerFluid">
+          <h1 class="title">Privacy Policy</h1>
+        </div>
+      </section>
+      <section class="panelSection">
+        <div class="containerFluid">
+          <div class="panelContainer borderTop" id="panelContainer">
+            <div class="panel">
+              <section class="scrollSpySection">
+                <div class="sideGrid">
+                  <ul
+                    class="spyNav nav animatedBox animaTransBoxJS"
+                    id="navbarMenuJS"
+                    role="navigation"
+                  >
+                    <li class="item">
+                      <a class="nav-link link" href="#page1"
+                        >Opening an account</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page2"
+                        >Sanctioned Countries</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page3">Privacy Policy</a>
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page4"
+                        >Term, Renewal &amp; Termination</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page5"
+                        >Switching between Subscription Plans</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page6"
+                        >Payments and Billing</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page7"
+                        >Intellectual property rights</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page8">Artlist Academy</a>
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page9"
+                        >Copyrights Infringement Notification Policy</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page10"
+                        >Company’s rights in case of a violation on your
+                        behalf</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page11"
+                        >Exemption from liability</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page12"
+                        >Indemnification</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page13"
+                        >Third Party Services</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page14">AI Services</a>
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page15"
+                        >Amendments to these Terms</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page16">Assignment</a>
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page17">Notices</a>
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page18">General</a>
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page19"
+                        >Governing Law &amp; Jurisdiction</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page20"
+                        >Operating Requirements</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a class="nav-link link" href="#page21"
+                        >Technical Problems</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div class="rteContainer">
+                    <h2 class="head">Terms of Use</h2>
+                    <p>
+                      These Terms of Use (“Terms”) settles the terms and
+                      conditions under which you may access and use this website
+                      and/or application and/or other future platforms offered
+                      by Company (“Site”), which is provided and made available
+                      to you by Artlist Ltd &nbsp;(20 Ahad Ha’am, Tel Aviv
+                      6514103, Israel) and its affiliates: Artlist Inc. (1007
+                      North Orange Street, 4th Floor, Wilmington, DE 19801, USA)
+                      and Artlist UK Limited (Suite 4 St Giles House, 27 St
+                      Giles Street, Norwich, Norfolk, UK, NR2 1JN, VAT No.
+                      GB770403942), as applicable and its affiliates (“Company”,
+                      “Artlist”, “we”, “our”, “us”)
+                    </p>
+                    <p>
+                      Kindly note that by accessing and/or using the Site, you,
+                      your authorized representative and/or any entity you
+                      hereby represent (“you”, “your”) accept these Terms and
+                      the Privacy Policy and agree to be bound by them.
+                      Therefore, it is your obligation to read these Terms and
+                      the Privacy Policy carefully and make sure you agree with
+                      them before any access or use of the site.
+                    </p>
+                    <p>
+                      Please be advised that by subscribing to our services, you
+                      will also be subject to the relevant
+                      <a
+                        href="/help-center/privacy-terms/artlist-license/"
+                        title="Artlist License"
+                        >License</a
+                      >
+                      or
+                      <a
+                        href="https://artlist.io/help-center/privacy-terms/eula"
+                        title="EULA"
+                        >End User License Agreement</a
+                      >
+                      (“EULA”) which applies to the specific subscription and
+                      assets you purchased (“License”), which shall be read
+                      together with these Terms and the Privacy Policy (together
+                      the “Agreement”). Capitalized terms used but not defined
+                      herein, shall have the respective meanings given to them
+                      in the License.
+                    </p>
+                    <p>
+                      You hereby represent and warrant that: (1) you have read
+                      the Agreement, understood the stated therein and you
+                      hereby agree to engage with the Company under its terms;
+                      (2) your age does not limit you from lawfully engaging in
+                      the Agreement and that you are not legally prohibited from
+                      entering into the Agreement; (3) you are authorized to
+                      enter into and perform the Agreement for yourself or for
+                      the entity the details of which were specified upon
+                      subscription to our services.
+                    </p>
+                    <div class="card">
+                      <p>Last update: June 24, 2024</p>
+                    </div>
+                  </div>
+                  <div class="rteContainer noBorder">
+                    <div class="spyContainer">
+                      <div class="sec active" id="page1">
+                        <h3>1. Opening an account</h3>
+                        <ol
+                          class="number-list"
+                          style="list-style-type: lower-alpha"
+                        >
+                          <li>
+                            In order to use the Company’s services and its'
+                            various licenses for using the Assets as specified
+                            in these Terms and in the License, you are required
+                            to (i) open an account in the Site, (ii) provide us
+                            with your accurate and full details (such as name,
+                            email address, phone number, payment method when
+                            relevant), including your Channels URL’s if you
+                            purchased a Social Creator License, and (iii) pay
+                            any applicable fees and taxes, except in case of a
+                            free trial account. You are forbidden from providing
+                            us a nonexistent email address or an email address
+                            which does not belong to you, impersonating another
+                            person or entity, or misleading us in any other way
+                            regarding your identity or your payment method
+                            information.
+                          </li>
+                          <li>
+                            You are required to protect the confidentiality and
+                            safety of the account details (username and
+                            password), and you will bear full and exclusive
+                            liability for all activities in your account. You
+                            must inform us immediately of any unauthorized use
+                            of your account
+                          </li>
+                          <li>
+                            In case you purchase a Team subscription, you will
+                            be required to provide us the relevant details for
+                            the access by all users under such subscription and
+                            the following will apply:
+                            <ol
+                              class="number-list"
+                              style="list-style-type: lower-alpha"
+                            >
+                              <li>
+                                Each entity or person purchasing a Team
+                                subscription (“Team Account”) shall select a
+                                person to register the Team Account (“Admin”)
+                                which shall act as its authorized representative
+                                and any decision or action made by the Admin is
+                                deemed as a decision or action of that entity or
+                                person. An Admin possess important privileges
+                                and controls over the use of the Team Account,
+                                including, without limitation: (i) control Admin
+                                and the Team Account users use of the Team
+                                Account; (ii) purchase, upgrade or downgrade the
+                                subscription; (iii) create, monitor or modify
+                                Team Account users’ actions and permissions;
+                                (iv) add, substitute or remove Team Account
+                                users from the Team Account. An Admin can be
+                                replaced only subject to the provision of the
+                                necessary information/documentation to the
+                                Company’s support team.
+                              </li>
+                              <li>
+                                The entity or person purchasing the Team Account
+                                is solely liable and responsible for
+                                understanding and controlling the settings of
+                                and access to the Team Account, including
+                                without limitation, the specific rights granted
+                                to the Admin. The entity or person purchasing
+                                the Team Account is responsible for the
+                                activities of all of its’ users, even if they
+                                are not part of its’ organization or domain.
+                                Furthermore, the entity or person purchasing the
+                                Team Account acknowledges that any action taken
+                                by the Admin or any Team Account users, is
+                                deemed by Company as an authorized action by it,
+                                hence&nbsp;it shall have no claim in this regard
+                              </li>
+                            </ol>
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page2">
+                        <h3>2. Sanctioned Countries</h3>
+                        <p>
+                          The Company is committed to complying with the
+                          sanctions laws and regulations of the United States,
+                          the EU and Israel. Accordingly, we will not trade with
+                          or provide any services to sanctioned countries or
+                          individuals/entities named on a sanctions list.
+                        </p>
+                      </div>
+                      <div class="sec" id="page3">
+                        <h3>3. Privacy Policy</h3>
+                        <p>
+                          We really care about your privacy and we make our best
+                          efforts to be fully transparent about our use of your
+                          information. Please review our
+                          <a
+                            href="/help-center/privacy-terms/privacy-policy/"
+                            title="Privacy Policy"
+                            >Privacy Policy</a
+                          >
+                          to learn how we collect and use your personal
+                          information and cookies.
+                        </p>
+                      </div>
+                      <div class="sec" id="page4">
+                        <h3>4. Term, Renewal &amp; Termination</h3>
+                        <ol
+                          class="number-list"
+                          style="list-style-type: lower-alpha"
+                        >
+                          <li>
+                            These Terms and the Privacy Policy will apply to you
+                            as long as you access the Site. The License will
+                            remain in effect for an indefinite term and you will
+                            be charged at the start of each billing cycle,
+                            according to your subscription terms. You will be
+                            automatically charged for additional similar
+                            periods, unless you notify us of your intention not
+                            to continue within 14 calendar days before the
+                            beginning of the next billing cycle. Upon beginning
+                            of the new billing cycle, the payment method you
+                            provided us will be automatically charged for the
+                            applicable period fees and will only be refunded
+                            pursuant to our Refund Policy below.
+                          </li>
+                          <li>
+                            Upon termination of the Agreement for any cause
+                            whatsoever, the rights granted to you under these
+                            Terms or the License will automatically expire, and
+                            you hereby undertake to immediately cease accessing,
+                            downloading and using any Assets, except as allowed
+                            under the License.
+                          </li>
+                          <li>
+                            You can terminate your subscription at any time by
+                            contacting our Customer Support / using the
+                            cancellation feature in your account. If you do so,
+                            your subscription will be terminated at the end of
+                            your current billing period, and you will not be
+                            charged thereafter. Until then, you will continue to
+                            have access to Artlist services under this
+                            Agreement.
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page5">
+                        <h3>5. Switching between Subscription Plans</h3>
+                        <p>
+                          You can switch between Artlist subscription plans, by
+                          accessing your account settings or by contacting our
+                          Customer Support team.
+                        </p>
+                      </div>
+                      <div class="sec" id="page6">
+                        <h3>6. Payments and Billing</h3>
+                        <ol style="list-style-type: lower-alpha">
+                          <li>
+                            <span style="text-decoration: underline"
+                              >Payment methods and processing</span
+                            >. Payments may be processed through third-party
+                            payment methods which Artlist makes available. You
+                            must provide accurate billing information, and
+                            promptly update any changes to it (such as card
+                            numbers and address). If you are paying via credit
+                            or debit card, based on the billing address provided
+                            by you, payments shall be processed by the relevant
+                            Artlist entity, and applicable law shall apply to
+                            such processing.
+                          </li>
+                          <li>
+                            <span style="text-decoration: underline">Taxes</span
+                            >. The tax treatment applied on each invoice will be
+                            based on the billing information provided by you,
+                            and you are solely responsible for the accuracy of
+                            such information. In particular, if you provide an
+                            invalid VAT/GST registration number, do not make
+                            your purchase as a business or provide an invalid
+                            address, Artlist will treat the transaction as a
+                            business-to-customers (BtoC) transaction, where
+                            applicable taxes may apply, at the relevant rate
+                            according to the billing information you provided.
+                            If thereafter you correct such billing information,
+                            Artlist reserves the right not to issue a credit
+                            note and a new invoice, and instead correct this on
+                            future invoices if applicable (subject to applicable
+                            tax changes).
+                          </li>
+                          <li>
+                            <span style="text-decoration: underline"
+                              >Refund Policy</span
+                            >. You will only be entitled to receive a refund for
+                            any fees paid to us if (1) you cancel your
+                            subscription within 14 calendar days from the date
+                            of its purchase and/or renewal (“Refund Period”) and
+                            (2) you did not download or generate any Assets
+                            during such Refund Period and/or used the plugins
+                            and/or used the software and exported a video you
+                            edited on the software. You hereby understand and
+                            agree that you will not be entitled to any refunds
+                            if: (i) you do not ask the Company for refund during
+                            the Refund Period; or (ii) you download any Asset
+                            from the Site during the Refund Period. <br />For
+                            the avoidance of doubt, this Section 6 does not
+                            apply to trial accounts, and therefore, if you are a
+                            subscriber with a trial account, you will not be
+                            entitled to any refund.
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page7">
+                        <h3>7. Intellectual property rights</h3>
+                        <ol
+                          class="number-list"
+                          style="list-style-type: lower-alpha"
+                        >
+                          <li>
+                            All the information, the Assets and contents
+                            included in the Site and the services offered by the
+                            Company, inclusive without limitation of any text,
+                            illustrations, graphics, sound, sound recording,
+                            musical works, clips, graphic segments, software
+                            applications, graphs, photos, video templates,
+                            plugins, Company’s name, trademarks and logos,
+                            including without limitation those used in the Site,
+                            are protected by copyrights and intellectual
+                            property rights of the Company or of its artists
+                            (“Proprietary Content”).
+                          </li>
+                          <li>
+                            You are forbidden from using the Company’s name,
+                            trademarks and logos, including without limitation
+                            those used in the Site. Moreover, as further
+                            specified in the License, you are forbidden from
+                            using the original Assets names and/or the artists
+                            names or artistic names.
+                          </li>
+                          <li>
+                            You are forbidden from accessing the Site or any
+                            Proprietary Content using any automated means or
+                            technology, such as robots, botnets, spiders,
+                            crawlers or scrapers, to extract, monitor, copy or
+                            collect information or data.
+                          </li>
+                          <li>
+                            You are forbidden from using any Proprietary Content
+                            and/or data and/or information and/or the Site for
+                            purposes of machine learning and/or Artificial
+                            Intelligence (“AI”) training, and/or for creation of
+                            generative AI and any similar acts.
+                          </li>
+                          <li>
+                            You hereby acknowledge and confirm that you do not
+                            and will not have any ownership and/or intellectual
+                            property rights in the Proprietary Content and/or
+                            recordings and/or the Assets and/or the contents of
+                            the Site and/or the Site’s trademarks and its
+                            design, and that your right is restricted to the
+                            limited rights granted to you in these Terms and in
+                            the License.
+                          </li>
+                          <li>
+                            The Agreement grants you an authorization to use the
+                            Site and the Assets strictly in accordance with the
+                            provisions of the Agreement and is conditioned by
+                            your undertaking not to violate or be involved in
+                            any activities that violate any terms of the
+                            Agreement, and specifically in activities which
+                            cause the violation of intellectual property rights
+                            and/or deviation from the provisions of the License.
+                          </li>
+                          <li>
+                            You may not reverse engineer, decompile, or
+                            disassemble any part of any source code contained
+                            within the Site, or any of the Proprietary Content,
+                            including the video templates and plugins or avoid,
+                            bypass, remove or impair any technological measure
+                            that limits access to them.
+                          </li>
+                          <li>
+                            In the event you provide us with suggestions,
+                            comments and/or any other form of feedback regarding
+                            the Company’s Site and services (“Feedback”), you
+                            acknowledge that any such Feedback shall be treated
+                            as non-confidential. and shall be exclusively owned
+                            by Artlist. You irrevocably assign all right, title,
+                            and interest you may have in the Feedback, and waive
+                            any moral rights to Artlist, which will be free to
+                            use the Feedback without giving to you any
+                            attribution and/or compensation. Artlist is under no
+                            obligation to use any Feedback received from
+                            you.&nbsp;
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page8">
+                        <h3>8. Artlist Academy</h3>
+                        <ol style="list-style-type: lower-alpha">
+                          <li>
+                            Artlist Academy is an online learning service
+                            available for streaming provided by Artlst to the
+                            Site’s users, including courses and informative
+                            tutorials on subjects relating to creativity and
+                            video creation (“<strong>Learning Materials</strong
+                            >”).
+                          </li>
+                          <li>
+                            Artlist grants you non-exclusive. non-transferable,
+                            non-sublicensable, fully revocable, limited license
+                            to use and access the Learning Materials.
+                          </li>
+                          <li>
+                            Without derogating from Artlist’s rights in its
+                            Proprietary Content as stated above, you may use the
+                            Learning Materials provided to you on Artlist
+                            Academy only for your own personal non-commercial
+                            use. Any other use or reproduction of the Learning
+                            Material or content provided by us on the Site,
+                            including but not limited to, download, copy,
+                            modify, assign, sell, publish, broadcast, transmit
+                            or otherwise make available by any other means, is
+                            strictly prohibited.
+                          </li>
+                          <li>
+                            Artlist reserves the right to suspend and/or
+                            terminate the Artlist Academy service and/or remove
+                            and/or add new Learning Materials, at any time
+                            without notice, at its sole discretion. Artlist may
+                            revoke your license and access to the Artlist
+                            Academy services and/or Learning Materials
+                            immediately, in the event you have breached this
+                            Agreement, and/or if it is required to do so for
+                            legal reasons.
+                          </li>
+                          <li>
+                            THIRD PARTY WEBSITES:&nbsp;THE SITE AND LEARNING
+                            MATERIALS MAY INCLUDE LINKS TO THIRD PARTIES’
+                            WEBSITE WHICH ARE NOT OWNED OR CONTROLLED BY
+                            ARTLIST. IF YOU USE THESE LINKS, YOU WILL LEAVE
+                            ARTLIST’S SITE AND WILL NO LONGER BE GOVERNED BY OUR
+                            AGREEMENT. THE LINKS DO NOT INDICATE THAT ARTLIST
+                            ENDORSES THOSE WEBSITES. IF YOU CHOOSE TO ACCESS
+                            AND/OR USE AND/OR MAKE USE OF THE INFORMATION AND
+                            SERVICES PROVIDED ON THIRD PARTIES’ WEBSITES, YOU DO
+                            SO AT YOUR OWN RISK.&nbsp; ARTLIST IS NOT
+                            RESPONSIBLE FOR AND HAS NO CONTROL OVER THE CONTENT
+                            OF THIRD PARTIES’ WEBSITES OR THE PROTECTION AND
+                            PRIVACY OF ANY INFORMATION YOU PROVIDE WHILE
+                            VISITING SUCH SITES AND WILL NOT BE HELD LIABLE FOR
+                            ANY DAMAGE OR LOSS, RESULTING FROM YOUR ACCESS AND
+                            USE OF THOSE SITES. WE RECOMMEND YOU EXERCISE
+                            CAUTION AND REVIEW THE TERMS OF USE AND THE PRIVACY
+                            STATEMENT APPLICABLE TO THE WEBSITE IN QUESTION
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page9">
+                        <h3>9. Copyright Infringement Notification Policy</h3>
+                        <ol
+                          class="number-list"
+                          style="list-style-type: lower-alpha"
+                        >
+                          <li>
+                            We take copyrights protection very seriously. If you
+                            believe that any Assets infringe your intellectual
+                            property or other rights, please see our
+                            <a
+                              href="/help-center/privacy-terms/copyright-policy/"
+                              title="Copyrights Policy"
+                              >Copyright Infringement Notification Policy</a
+                            >
+                          </li>
+                          <li>
+                            If we are notified that any Assets infringes third
+                            party copyright or other rights, we may in our sole
+                            discretion remove such Assets from the Site or take
+                            other steps that we deem necessary, without any
+                            prior notification.
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page10">
+                        <h3>
+                          10. Company’s rights in case of a violation on your
+                          behalf
+                        </h3>
+                        <ol
+                          class="number-list"
+                          style="list-style-type: lower-alpha"
+                        >
+                          <li>
+                            You hereby acknowledge that any unauthorized use by
+                            you and/or by anyone on your behalf of any of the
+                            Assets or the Site or in a manner deviating from the
+                            conditions of the Agreement, constitute a breach of
+                            the Agreement as well as a violation of the
+                            copyright laws, and the Company and anyone on its
+                            behalf have the full right to exercise all rights
+                            and remedies available to it by law in such case. To
+                            the extent the violation is done by a third-party
+                            using Assets that were downloaded by you or using
+                            your subscription (for example: your employees,
+                            contractors, clients), then you are responsible for
+                            such a violation and you are required to take all
+                            possible actions to immediately cease the violation.
+                          </li>
+                          <li>
+                            The Company will be entitled, among other remedies,
+                            at its exclusive discretion and without any prior
+                            notice, to block your access to the Site and/or its
+                            services, temporarily or permanently, in case you
+                            violate any applicable law and/or any terms of the
+                            Agreement, or in case of an interruption of the
+                            Company’s or its Site’s regular activity, and you
+                            will have no claim or demand in this regard.
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page11">
+                        <h3>11. Exemption from liability</h3>
+                        <p>
+                          TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU
+                          EXPRESSLY UNDERSTAND AND AGREE THAT: (I) THE SITE,
+                          ASSETS AND SERVICES PROVIDED BY THE COMPANY ARE
+                          PROVIDED ‘AS-IS’ AND‘AS AVAILABLE’WITHOUT WARRANTY OF
+                          ANY KIND, INCLUDING WITHOUT LIMITATION, TO THE
+                          WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+                          PARTICULAR PURPOSE, NON-INFRINGEMENT, AND ANY OTHER
+                          WARRANTY THAT MIGHT ARISE UNDER ANY LAW; (II) COMPANY
+                          DOES NOT WARRANT THAT THE SITE OR ITS’SERVICES WILL BE
+                          UNINTERRUPTED OR IMMUNE TO DAMAGE, MALFUNCTIONS,
+                          DEFECTS OR FAILURES IN THE HARDWARE, SOFTWARE,
+                          COMMUNICATION SYSTEMS AND LINES, AT THE SITE OR AT ANY
+                          OF ITS SUPPLIERS; (III) COMPANY WILL BEAR NO LIABILITY
+                          IN CASE ANY OF THE ASSETS IS NOT AVAILABLE IN THE
+                          SITE, FOR ANY REASON WHATSOEVER, DURING THE TERM OF
+                          THE AGREEMENT; (IV) COMPANY WILL BEAR NO LIABILITY IN
+                          ANY MANNER FOR THE USE OF ANY OTHER ADDITIONAL
+                          CONTENTS WHICH YOU MAY INTEGRATE IN THE PROJECTS AND
+                          YOU WILL SOLELY BEAR FULL AND EXCLUSIVE LIABILITY FOR
+                          USING THEM; (V) COMPANY RESERVES ITS RIGHT TO REMOVE
+                          AND/OR ADD ASSETS TO THE SITE AT ANY TIME AT ITS
+                          EXCLUSIVE DISCRETION AND YOU WILL BEAR NO CLAIMS OR
+                          ARGUMENTS IN THIS REGARD; (VI) COMPANY WILL BEAR NO
+                          LIABILITY FOR ANY DIRECT OR INDIRECT, CONSEQUENTIAL,
+                          INCIDENTAL, PUNITIVE, AND EXEMPLARY DAMAGE, PECUNIARY
+                          OR ANOTHER, WHICH YOU MIGHT INCUR CONSEQUENT UPON: (1)
+                          YOUR USE, OR INABILITY TO USE THE SITE, THE LEARNING
+                          MATERIALS, THE SERVICES AND ANY WEBSITES LINKED TO IT;
+                          (2) CHANGES COMPANY MAY MAKE TO THE SITE AND ITS
+                          SERVICES, ALL OR ANY OF THEM; (3) CEASING, TEMPORARILY
+                          OR PERMANENTLY, THE PROVISION OF ITS SERVICES, ALL OR
+                          ANY OF THEM; (4) CHANGING, ADDING OR REMOVING ANY OF
+                          THE SERVICES’ CHARACTERS OR PROPERTIES, ALL OR ANY OF
+                          THEM; (5) CHANGING, ADDING OR REMOVING ANY CONTENTS,
+                          RECORDINGS OR ASSETS FROM THE SITE, ALL OR ANY OF
+                          THEM; (VII) COMPANY, OR ANY OF ITS DIRECTORS,
+                          OFFICERS, EMPLOYEES, SHAREHOLDERS OR AGENTS, WILL BEAR
+                          NO LIABILITY FOR ANY KIND OF DAMAGE IN CONNECTION WITH
+                          ANY CLAIM, LOSS OR DAMAGE ARISING UNDER OR OUT OF THIS
+                          AGREEMENT.
+                        </p>
+                      </div>
+                      <div class="sec" id="page12">
+                        <h3>12. Indemnification</h3>
+                        <p>
+                          You hereby undertake to indemnify the Company, its
+                          subsidiaries, affiliates, licensors, employees,
+                          officers, directors, agents, service providers and
+                          artists and anyone on their behalf for any argument,
+                          claim, damage, loss, loss of profit, payment or
+                          expense (inclusive of lawyer’s fee and legal expenses)
+                          that might arise due to your use of the Company’s Site
+                          and services, your breach of the provisions of the
+                          Agreement or any use you make of Company’s services in
+                          violation of any applicable law or third-party rights.
+                        </p>
+                      </div>
+                      <div class="sec" id="page13">
+                        <h3>13. Third Party Services</h3>
+                        <p>
+                          WHEN SUBSCRIBING OR USING COMPANY’S SERVICES, YOU MAY
+                          ALSO BE USING THE SERVICES OF ONE OR MORE THIRD
+                          PARTIES, SUCH AS INTERNET OR PAYMENT SERVICES
+                          PROVIDERS OR PLATFORMS IN WHICH YOU UPLOAD YOUR
+                          PROJECTS (EX: YOUTUBE, FACEBOOK, ETC). SUCH THIRD
+                          PARTIES MIGHT HAVE THEIR OWN TERMS OF USE, AGREEMENTS
+                          AND POLICIES WHICH MAY APPLY TO YOU. YOU ACKNOWLEDGE
+                          AND AGREE THAT COMPANY IS NOT RESPONSIBLE OR LIABLE
+                          FOR ANY SUCH THIRD PARTY SERVICES AND TERMS NOR FOR
+                          THE COMPLIANCE WITH THEM. WE STRONGLY ENCOURAGE YOU TO
+                          CAREFULLY READ ANY SUCH THIRD PARTY TERMS OF USE AND
+                          POLICIES AND MAKE SURE YOU COMPLY WITH THEM
+                        </p>
+                        <p>
+                          Artlist’s API client uses YouTube API Services. If you
+                          are using our service on YouTube, you hereby certify
+                          that you have read and agree to
+                          <a href="https://www.youtube.com/t/terms"
+                            >YouTube’s General Terms of Service</a
+                          >
+                          and
+                          <a href="https://policies.google.com/privacy"
+                            >Google’s Privacy Policy</a
+                          >.&nbsp;
+                        </p>
+                        <p>&nbsp;</p>
+                      </div>
+                      <div class="sec" id="page14">
+                        <h3>14. AI Services</h3>
+                        <ol style="list-style-type: lower-alpha">
+                          <li>
+                            Company may utilize our and/or third party
+                            artificial intelligence technology ("AI") and/or
+                            tools and/or features (“AI Services”) designed to
+                            provide you with tools to generate AI content,&nbsp;
+                            improve our services, user experience and the
+                            information provided to you. It is hereby clarified
+                            that such AI Services are not intended to be used
+                            for the purpose of processing personal data. You are
+                            responsible for any personal data you provide while
+                            interacting with the AI Services. Artlist reserves
+                            the right to suspend and/or terminate and/or
+                            discontinue the AI Services and/or remove and/or add
+                            new AI Services, at any time without notice to you,
+                            at its sole discretion.&nbsp;
+                          </li>
+                          <li>
+                            Some of our AI Services give you the option to
+                            provide input and receive generated AI output from
+                            the AI Service based on the input provided by you.
+                            You&nbsp; are solely responsible for your input and
+                            output, including ensuring that it does not violate
+                            any law or our Terms and License, and you represent
+                            that you have all the rights; authorizations,
+                            permissions and licenses needed to provide input and
+                            generate output using our AI Services.
+                          </li>
+                          <li>
+                            AI Services may produce offensive, inaccurate or
+                            partial outputs. Such outputs do not represent
+                            Artlist or its views and Artlist is not responsible
+                            for any such output that might be generated by using
+                            its AI Services.
+                          </li>
+                          <li>
+                            Any reference and/or mention of third-party product
+                            or services in an output does not indicate and/or
+                            implies that said third-party endorses or is
+                            affiliated with Artlist.
+                          </li>
+                          <li>
+                            Given the nature of AI technology we cannot
+                            guarantee and do not warrant to you as to the
+                            accuracy or reliability of the outputs or results
+                            generated by the AI Services.
+                          </li>
+                          <li>
+                            For some of our AI Services, we grant you a quota of
+                            credits/points/characters, which you can review in
+                            your Account page, to use in order to generate AI
+                            outputs. Credits/points/characters do not grant you
+                            any property rights, are non-transferable, not
+                            refundable and cannot be exchanged for money or
+                            monetary value. You cannot and are prohibited from
+                            selling and/or transferring and/or gifting and/or
+                            endowing the credits/points/characters allotted to
+                            you to another person. The credits/points/characters
+                            can only be used in connection with and as part of
+                            the specific AI Service in which they are granted to
+                            you.
+                          </li>
+                          <li>
+                            Artlist’s API client uses Open AI API Services. If
+                            you are using our Artboard feature, you hereby
+                            certify that you have read and agree to
+                            <a href="https://openai.com/policies/terms-of-use"
+                              >Open AI Terms of Use</a
+                            >
+                            and
+                            <a href="https://openai.com/policies/privacy-policy"
+                              >Privacy Policy</a
+                            >. <br />Artlist’s API client also uses ElevenLabs
+                            API Services. If you are using the AI Voice
+                            Generator feature, you hereby certify that you have
+                            read and agree to ElevenLabs
+                            <a href="https://elevenlabs.io/terms-of-use"
+                              >Terms of Service</a
+                            >
+                            and
+                            <a href="https://elevenlabs.io/privacy-policy"
+                              >Privacy Policy</a
+                            >.<br /><br />
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page15">
+                        <h3>
+                          15. Amendments to these Terms
+                          <strong>&amp; Fees</strong>
+                        </h3>
+                        <ol style="list-style-type: lower-alpha">
+                          <li>
+                            Company has the right to change the conditions of
+                            these Terms, the License and the Privacy Policy from
+                            time to time at its exclusive discretion. Upon
+                            making the changes, the new version of the Terms,
+                            License and/or Privacy Policy will be posted on the
+                            Site. You are advised to check for updates
+                            regularly. In the event of material changes, we
+                            might provide you with a notice. If you do not agree
+                            to the changes in any such terms, you must cease
+                            accessing and using the Site and Company’s services
+                            and cease downloading Assets. By continuing to
+                            access or use the Site, the services and the Assets
+                            you agree to be bound by the updated version of the
+                            Agreement, which will apply to you in its entirety.
+                          </li>
+                          <li>
+                            Company has the right to change, modify, cancel or
+                            discontinue any service, tool, benefit, feature
+                            and/or functionality offered by it on the Site, at
+                            its sole discretion. In the event of material
+                            changes, we may provide you with a notice.
+                          </li>
+                          <li>
+                            We may change our subscription plans and their
+                            prices from time to time (including due to
+                            applicable tax changes). In such cases, we will
+                            notify you in advance and such change will only
+                            apply to you by your next billing cycle.
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page16">
+                        <h3>16. Assignment</h3>
+                        <p>
+                          The Company is entitled to assign and/or transfer
+                          and/or deliver its rights and/or its undertakings
+                          according to the Agreement, in whole or in part, to
+                          third parties as it may see fit and at its exclusive
+                          discretion. Any such Company’s transferee will, in
+                          turn, be entitled to transfer any such
+                          rights/undertakings to other parties as it may see fit
+                          without having to obtain your consent.
+                        </p>
+                      </div>
+                      <div class="sec" id="page17">
+                        <h3>17. Notices</h3>
+                        <ol
+                          class="number-list"
+                          style="list-style-type: lower-alpha"
+                        >
+                          <li>
+                            You hereby agree that we will be able to send you
+                            email messages referring to the Company’s services
+                            and other various subjects, inclusive with regards
+                            to benefits granted to the Company’s subscribers. If
+                            you do not want to receive our promotional or
+                            marketing emails, you can withdraw your consent at
+                            any time following the instructions in our
+                            <a
+                              href="/help-center/privacy-terms/privacy-policy/"
+                              title="Privacy Policy"
+                              >Privacy Policy</a
+                            >
+                          </li>
+                          <li>
+                            Notices according to the Agreement will be given in
+                            writing and be sent by email according to the email
+                            address you specified in the registration form. Any
+                            delivery of a notice by email as stated above will
+                            be considered a lawful delivery.
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page18">
+                        <h3>18. General</h3>
+                        <ol
+                          class="number-list"
+                          style="list-style-type: lower-alpha"
+                        >
+                          <li>
+                            You bear responsibility for payment of all taxes and
+                            expenses applying to you in connection with the
+                            Agreement and/or your use of the Assets, to the
+                            extent such may apply. In the event the Company is
+                            required to pay any such taxes and expenses on your
+                            behalf, we will be entitled to charge you for any
+                            such amounts.
+                          </li>
+                          <li>
+                            The Agreement constitutes the entire agreement
+                            between you and the Company with respect to your
+                            access and use of the Site, the Assets and the
+                            Company’s services and any prior or future agreement
+                            and/or undertaking and/or declaration not
+                            specifically included in the Agreement will not be
+                            valid. You hereby waive in advance any claim
+                            according to which the Agreement was changed and/or
+                            amended and/or canceled by conduct or by any
+                            correspondence between you and Company or anyone on
+                            its behalf.
+                          </li>
+                          <li>
+                            If and to the extent any provision of the Agreement
+                            is decided by court to be invalid, illegal or
+                            unenforceable, it will not derogate from the
+                            validity of the other provisions of the Agreement.
+                          </li>
+                          <li>
+                            In the event you have any question regarding these
+                            Terms, the Site or our services, you can contact our
+                            Customer Support
+                            <a
+                              href="https://help.artlist.io/hc/en-us/requests/new"
+                              >here</a
+                            >.
+                          </li>
+                          <li>
+                            The following paragraphs shall survive the
+                            expiration or termination of this Agreement:
+                            indemnification, exemption of liability,
+                            intellectual property rights, assignment, governing
+                            law and general terms.
+                          </li>
+                          <li>
+                            These Terms do not affect your statutory rights.
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page19">
+                        <h3>19. Governing Law &amp; Jurisdiction</h3>
+                        <p>
+                          The laws of the State of Israel will exclusively apply
+                          to the Agreement, without giving effect to any rules
+                          or principles of conflict-of-law, and the jurisdiction
+                          to hear any issue resulting from or regarding the
+                          Agreement, directly or indirectly, will be given
+                          exclusively and uniquely to the Tel Aviv-Yaffo courts
+                          and no other court anywhere else.
+                        </p>
+                        <p>
+                          ---------------------------------------------------------------------------------------------------
+                        </p>
+                        <p>
+                          If you are a subscriber of the Artlist Max, your use
+                          of FXhome software and plugins components will be
+                          subject to (1) these Terms of Use, (2) the following
+                          additional sections and (3) the EULA provided to you
+                          during the download of the software and
+                          plugins.&nbsp;&nbsp;&nbsp;
+                        </p>
+                      </div>
+                      <div class="sec" id="page20">
+                        <h3>20. Operating Requirements</h3>
+                        <ol
+                          class="number-list"
+                          style="list-style-type: lower-alpha"
+                        >
+                          <li>
+                            It is your responsibility to carefully check the
+                            operating system requirements for the software and
+                            plugins. These can be found on our website at our
+                            <a
+                              href="https://help.artlist.io/hc/en-us"
+                              title="Help Center"
+                              >Help Center</a
+                            >.
+                          </li>
+                          <li>
+                            You acknowledge and agree that you are responsible
+                            for downloading, installation, management and
+                            operation of the software and/or plugins.
+                          </li>
+                          <li>
+                            Please note that if your subscription expires, you
+                            will have the free/watermarked version of the
+                            software and/or plugins, these versions will not
+                            have the complete functionality of the full
+                            versions.
+                          </li>
+                        </ol>
+                      </div>
+                      <div class="sec" id="page21">
+                        <h3>21. Technical Problems</h3>
+                        <ol
+                          class="number-list"
+                          style="list-style-type: lower-alpha"
+                        >
+                          <li>
+                            The software and plugins that we supply to you must
+                            be as described, fit for purpose and of satisfactory
+                            quality. In the event that the software or plugins
+                            do not conform to these standards and your hardware
+                            meets our minimum technical specifications, please
+                            submit a request through the
+                            <a
+                              rel="noopener"
+                              href="https://help.artlist.io/hc/en-us/requests/new"
+                              target="_blank"
+                              >Help Center</a
+                            >, indicating the function you were using when you
+                            experienced the malfunction and any error message,
+                            who can provide you with assistance and support. Our
+                            Customer Support team will advise you whether you
+                            may be entitled to a repair or a replacement of the
+                            software or plugins.
+                          </li>
+                          <li>
+                            In the event of a defect and/or fault in our
+                            software or plugins, you may be entitled to a
+                            refund, repair or compensation under your statutory
+                            rights. You shall not be entitled to a refund,
+                            repair and/or compensation where:
+                            <ol
+                              class="number-list"
+                              style="list-style-type: lower-alpha"
+                            >
+                              <li>
+                                Software and/or plugins with faults caused by
+                                accident, neglect, misuse, or normal wear and
+                                tear.
+                              </li>
+                              <li>
+                                Any attempt to circumvent any of the
+                                restrictions and/or limitations installed in the
+                                software and/or plugins, and/or failure to
+                                comply with our instructions in using the
+                                software and/or plugins.
+                              </li>
+                              <li>
+                                Failure to use the software and/or plugins in
+                                accordance with the terms of the EULA.
+                              </li>
+                            </ol>
+                          </li>
+                          <li>
+                            We will not be held responsible if the software
+                            and/or plugins are incompatible with your system or
+                            for incompatibilities caused by equipment that has
+                            been modified to disable regional encoding. As a
+                            result, we recommend that you check the software
+                            and/or plugins in an alternative machine before
+                            contacting us.<br /><br /><br />
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--============ Footer ================-->
+
+    <footer class="bg-gray-700">
+      <div class="container">
+        <div
+          class="grid grid-rows-1 gap-10 py-10 lg:grid-cols-3 lg:gap-14 xl:gap-28"
+        >
+          <div class="text-gray-200">
+            <div class="text-gray-100">
+              <div class="flex h-full items-center">
+                <a class="flex h-full items-center" href="/"
+                  ><span class="w-17" aria-label="Home Page" role="link">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 47 13"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M30.5454 1.36828C30.5454 2.12396 29.9328 2.73655 29.1771 2.73655C28.4214 2.73655 27.8088 2.12396 27.8088 1.36828C27.8088 0.612598 28.4214 0 29.1771 0C29.9328 0 30.5454 0.612598 30.5454 1.36828ZM26.6818 12.2524H24.3134V0.508286H26.6818V12.2524ZM23.1691 12.2524V10.1788H21.9933C21.3718 10.1788 21.1366 9.90785 21.1366 9.40022V5.62534H23.1187V3.62885H21.1366V1.21293H18.7682L18.7705 3.62885L17.3444 3.63266L17.3404 5.62534H18.7682V9.7861C18.7682 11.4303 19.5913 12.2524 21.2374 12.2524H23.1691ZM16.1379 3.62885C14.7941 3.62885 14.1222 4.14895 13.6519 4.9207L13.4323 3.63266H11.2835V12.2567H13.6539V8.02656C13.6539 6.71794 14.1894 5.6658 15.6003 5.6658H16.5543V3.63266L16.1379 3.62885ZM27.995 12.2524H30.3802V3.72521H27.995V12.2524ZM35.5116 12.353C33.1096 12.353 31.4802 11.2289 31.3795 9.38345H33.6303C33.7143 10.1384 34.3694 10.6585 35.5284 10.6585C36.5194 10.6585 37.1241 10.3397 37.1241 9.73577C37.1241 9.05717 36.5789 8.98541 35.2934 8.8162L35.142 8.79624C33.1264 8.56136 31.5642 8.10838 31.5642 6.32999C31.5642 4.61871 33.0592 3.49463 35.2764 3.51141C37.5944 3.51141 39.1902 4.53482 39.3077 6.29643H37.0401C36.9729 5.60857 36.3178 5.18914 35.3604 5.18914C34.4365 5.18914 33.8319 5.52468 33.8319 6.07833C33.8319 6.71115 34.5232 6.79471 35.6931 6.93611L35.8139 6.95075C37.796 7.15207 39.4421 7.60506 39.4421 9.55122C39.4421 11.2625 37.8296 12.353 35.5116 12.353ZM45.7217 12.2524V10.1788H44.5459C43.9244 10.1788 43.6892 9.90785 43.6892 9.40023V5.62535H45.6713V3.62886H43.6892V1.21294H41.3208L41.3231 3.62886L39.897 3.63267L39.893 5.62535H41.3208V9.78611C41.3208 11.4303 42.1439 12.2524 43.79 12.2524H45.7217ZM5.02751 12.247H2.14772H0V10.3357L3.49117 1.22374H6.70832L10.1946 10.3335V12.247H7.94583H7.10308H5.02751ZM7.67152 10.1609L5.09734 3.50719L2.48466 10.1609H7.67152Z"
+                      ></path></svg></span
+                ></a>
+              </div>
+            </div>
+            <div class="mt-4 font-medium">
+              Creative tools, built for creators.
+            </div>
+            <p class="mt-2 max-w-100 text-sm">
+              Our mission is to empower creators worldwide to tell their stories
+              through video. We bring opportunity to the creative industry
+              through powerful video editing software, professional digital
+              assets for video creation and accessible learning resources to
+              support you in achieving your vision.
+            </p>
+          </div>
+          <div class="lg:col-span-2">
+            <div
+              class="grid grid-cols-1 gap-1 sm:grid-cols-3 sm:gap-8 lg:grid-cols-4 lg:pl-5"
+            >
+              <div
+                class="border-b border-gray-500 py-4 sm:border-0 sm:py-0 lg:[&amp;:nth-child(4n)]:pl-10 lg:[&amp;:last-child]:pl-10"
+                data-testid="Submenu"
+              >
+                <strong class="mb-4 hidden font-semibold text-gray-100 sm:flex"
+                  >Products</strong
+                >
+                <div role="button" class="flex justify-between sm:hidden">
+                  <div class="font-semibold text-gray-100">Products</div>
+                </div>
+                <ul class="sm:space-y-3">
+                  <span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        data-testid="Link"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="#"
+                        >Home</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        data-testid="Link"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="#"
+                        >Explore Tracks</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        data-testid="Link"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="#"
+                        >Artist and Album</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="#"
+                        >Download List</a
+                      >
+                    </li></span
+                  ><span
+                </ul>
+              </div>
+              <div
+                class="border-b border-gray-500 py-4 sm:border-0 sm:py-0 lg:[&amp;:nth-child(4n)]:pl-10 lg:[&amp;:last-child]:pl-10"
+                data-testid="Submenu"
+              >
+                <strong class="mb-4 hidden font-semibold text-gray-100 sm:flex"
+                  >About</strong
+                >
+                <div role="button" class="flex justify-between sm:hidden">
+                  <div class="font-semibold text-gray-100">About</div>
+                </div>
+                <ul class="sm:space-y-3">
+                  <span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        target="_blank"
+                        href="#"
+                        >About Us</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="faqs.html"
+                        >FAQs</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        href="/page/pricing/max"
+                        >Pricing</a
+                      >
+                    </li></span
+                  >
+                </ul>
+              </div>
+              <div
+                class="border-b border-gray-500 py-4 sm:border-0 sm:py-0 lg:[&amp;:nth-child(4n)]:pl-10 lg:[&amp;:last-child]:pl-10"
+                data-testid="Submenu"
+              >
+                <strong class="mb-4 hidden font-semibold text-gray-100 sm:flex"
+                  >Resources</strong
+                >
+                <div role="button" class="flex justify-between sm:hidden">
+                  <div class="font-semibold text-gray-100">Resources</div>
+                </div>
+                <ul class="sm:space-y-3">
+                  <span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        href="blog.html"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Blog</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                  >
+                    <li class="h-full w-full" data-testid="MenuItem">
+                      <a
+                        data-testid="Link"
+                        href="#"
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Academy</a
+                      >
+                    </li></span
+                  >
+                </ul>
+              </div>
+              <div class="border-b border-gray-500 py-4 sm:border-0 sm:py-0">
+                <strong class="mb-4 hidden font-semibold text-gray-100 sm:flex"
+                  >License &amp; Terms</strong
+                >
+                <div role="button" class="flex justify-between sm:hidden">
+                  <div class="font-semibold text-gray-100">
+                    License &amp; Terms
+                  </div>
+                </div>
+                <ul class="sm:space-y-3">
+                  <span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        role="link"
+                        target="_blank"
+                        href="#"
+                        >License</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        target="_blank"
+                        href="#"
+                        >Terms of Use</a
+                      >
+                    </li></span
+                  ><span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        target="_blank"
+                        href="#"
+                        >Copyright Policy</a
+                      >
+                    </li></span
+                  >
+                  <span
+                    class="block transition-all ease-in-out pointer-events-none duration-200 sm:pointer-events-auto sm:h-auto sm:opacity-100"
+                    ><li class="h-full w-full">
+                      <a
+                        class="whitespace-nowrap py-1 text-sm font-normal text-gray-200 transition-colors duration-300 hover:text-gray-50 sm:py-0.5"
+                        target="_blank"
+                        href="#"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                  </span>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:flex-row lg:justify-between">
+          <div
+            class="flex flex-col justify-start gap-3 py-5 sm:border-t sm:border-gray-300/70 lg:flex-row lg:justify-between"
+          >
+            <ul class="flex items-center gap-8">
+              <li id="YouTube" aria-label="YouTube">
+                <a
+                  title="YouTube"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/youtube.svg"
+                    alt="YouTube"
+                /></a>
+              </li>
+              <li id="Instagram" aria-label="Instagram">
+                <a
+                  title="Instagram"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/instagram.svg"
+                    alt="Instagram"
+                /></a>
+              </li>
+              <li id="Facebook" aria-label="Facebook">
+                <a
+                  title="Facebook"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/facebook.svg"
+                    alt="Facebook"
+                /></a>
+              </li>
+              <li id="TikTok" aria-label="TikTok">
+                <a
+                  title="TikTok"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/tiktok.svg"
+                    alt="TikTok"
+                /></a>
+              </li>
+              <li id="Twitter" aria-label="Twitter">
+                <a
+                  title="Twitter"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/x.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+              <li id="Spotify" aria-label="Spotify">
+                <a
+                  title="Spotify"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/spotify.svg"
+                    alt="Spotify"
+                /></a>
+              </li>
+              <li id="LinkedIn" aria-label="LinkedIn">
+                <a
+                  title="LinkedIn"
+                  data-testid="Link"
+                  href="#"
+                  class="text-gray-200 hover:text-gray-50 transition-colors duration-300 hover:text-accent"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img
+                    class="h-5"
+                    src="https://artlist-dev.imgix.net/artlist/footer-social-icons/linkedin.svg"
+                    alt="LinkedIn"
+                /></a>
+              </li>
+            </ul>
+            <ul class="flex gap-5 border-b-0 pt-0">
+              <li class="h-full w-full sm:w-auto" data-testid="MenuItem">
+                <span
+                  class="block cursor-pointer flex h-full items-center text-gray-200 transition-colors duration-300 ease-in-out hover:text-gray-50"
+                  role="button"
+                  data-acsb-custom-trigger="true"
+                  data-testid="renderItemNoUrlWrapper"
+                  tabindex="0"
+                  >Accessibility</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS File -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="assets/js/tailwind.js"></script> -->
+
+    <script>
+      $(document).ready(function () {
+        $("#search-icon").click(function () {
+          $("#search-panel").slideToggle("slow");
+        });
+
+        $("#btn-close").click(function () {
+          $("#search-panel").slideUp("slow");
+        });
+
+        //hamburger-menu
+        $(".hamburger-menu").click(function () {
+          $(this).toggleClass("change");
+          $(".sidebar").toggleClass("active");
+        });
+
+        $(document).click(function (event) {
+          if (
+            !$(event.target).closest(".sidebar").length &&
+            !$(event.target).closest(".hamburger-menu").length
+          ) {
+            $(".sidebar").removeClass("active");
+            $(".hamburger-menu").removeClass("change");
+          }
+        });
+
+        $(".sidebar").click(function (event) {
+          event.stopPropagation();
+        });
+      });
+    </script>
+  </body>
+</html>

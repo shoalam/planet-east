@@ -9,6 +9,10 @@
   --colors-accent-title: 247 191 83;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(23, 23, 23) !important;
 }
