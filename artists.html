@@ -374,8 +374,8 @@
       </div>
     </div>
     <!--============
-    Search Bar End
-    ==============-->
+     Search Bar End
+     ==============-->
 
     <!-- =========== Sidebar ========= -->
     <div class="sidebar-wrapper">
@@ -1096,399 +1096,347 @@
 
     <!-- ============ Sidebar End =========== -->
 
-    <!-- Main Content -->
-    <main class="h-full">
-      <div class="relative h-full" data-testid="AccountPage">
-        <div class="relative text-white lg:grow p-10 lg:px-50 lg:py-20">
-          <div class="mb-10 flex text-2.5xl font-bold">Account</div>
-          <div class="sm:px-5 md:px-0">
-            <div data-testid="Navigation">
-              <div
-                class="mb-5 lg:mb-10"
-                style="
-                  mask-image: linear-gradient(
-                    90deg,
-                    rgb(0, 0, 0),
-                    black 80px,
-                    black calc(100% - 80px),
-                    rgba(0, 0, 0, 0)
-                  );
-                "
+    <!--============
+     Main Conent 
+     ==============-->
+    <main class="h-full py-14 main-content">
+      <div class="breadcrumb">
+        <ul
+          class="flex w-full flex-wrap bg-black/60 py-1 px-5 text-xs text-gray-100"
+        >
+          <li class="flex">
+            <span class="transition-smooth mx-1.5 hover:text-white"
+              ><a role="link" href="/">Home</a></span
+            ><span class="mx-1"
+              ><svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="chevron-right"
+                class="svg-inline--fa fa-chevron-right fa-xs"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
               >
-                <div class="">
-                  <div>
-                    <div class="flex gap-8 tab-nav" role="tablist">
-                      <a
-                        tabindex="0"
-                        role="link"
-                        aria-selected="true"
-                        data-testid="Link"
-                        class=""
-                        href="profile.html"
-                        ><div class="flex items-center">Profile</div></a
-                      ><a
-                        tabindex="-1"
-                        role="link"
-                        aria-selected="false"
-                        data-testid="Link"
-                        class=""
-                        href="plan-and-billings.html"
-                        ><div class="flex items-center">
-                          Plan &amp; Billings
-                        </div></a
-                      >
-                    </div>
-                    <span
-                      class="MuiTabs-indicator mui-style-10v6cbe"
-                      style="left: 0px; width: 46.875px"
-                    ></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+                <path
+                  fill="currentColor"
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                ></path></svg
+            ></span>
+          </li>
+          <li class="flex">
+            <span class="mx-1.5">Spotlight</span
+            ><span class="mx-1"
+              ><svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="chevron-right"
+                class="svg-inline--fa fa-chevron-right fa-xs"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                ></path></svg
+            ></span>
+          </li>
+          <li class="flex">
+            <span class="ml-1.5">Artists</span>
+          </li>
+        </ul>
+      </div>
+      <div class="content-inner mt-14">
+        <div class="container">
+          <div class="page-heading">
+            <h2
+              class="my-10 font-bold sm:mt-0 text-4xl md:text-10xl border-b-[1px] border-gray-100 pb-8"
+            >
+              Artists
+            </h2>
           </div>
-          <div class="relative flex min-h-full flex-col justify-between">
-            <div class="md:max-w-205" data-testid="ProfileTab">
-              <div data-test-id="account-page__personal-info-section">
-                <div class="">
-                  <form data-testid="InfoForm">
-                    <div class="mt-7.5 space-y-10">
-                      <div
-                        class="flex items-center gap-2"
-                        data-test-id="account-page__personal-info__form-fields__fullName"
-                      >
-                        <div
-                          class="relative w-full"
-                          tabindex="-1"
-                          role="presentation"
-                          data-testid="InputControlTemplate"
-                        >
-                          <div
-                            class="rounded py-3 sm:py-4 border-t-transparent border-gray-100"
-                          >
-                            <div class="h-auto w-full flex items-center">
-                              <label
-                                class="pointer-events-none absolute mb-0 flex w-full text-gray-100 -top-1.5 left-0 before:border-t-gray-100 after:border-t-gray-100"
-                                data-testid="Full Name-label"
-                                ><span
-                                  class="truncate transition-all duration-100 text-sm leading-tight leading-5 animate-floatOutlinedLabel"
-                                  >Full Name</span
-                                ></label
-                              ><input
-                                data-testid=""
-                                aria-label=""
-                                name=""
-                                type="text"
-                                disabled=""
-                                placeholder=""
-                                class="flex w-full grow bg-transparent text-base shadow-none outline-none focus:outline-none focus:ring-0 text-gray-100 placeholder:text-sm placeholder:text-gray-200 h-4.5 p-0 leading-none transition-[background-color,color] delay-[0s] duration-[600000s]"
-                                value="Shofiul Alam"
-                              />
-                            </div>
-                            <div
-                              class="flex items-center"
-                              data-testid="EndSlot"
-                            ></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="flex items-center gap-2"
-                        data-test-id="account-page__personal-info__form-fields__email"
-                      >
-                        <div
-                          class="relative w-full"
-                          tabindex="-1"
-                          role="presentation"
-                          data-testid="InputControlTemplate"
-                        >
-                          <div
-                            class="rounded py-3 sm:py-4 border-t-transparent border-gray-100"
-                          >
-                            <div class="h-auto w-full flex items-center">
-                              <label
-                                class="pointer-events-none absolute mb-0 flex w-full text-gray-100 -top-1.5 left-0 before:border-t-gray-100 after:border-t-gray-100"
-                                data-testid="Email-label"
-                                ><span
-                                  class="truncate transition-all duration-100 text-sm leading-tight leading-5 animate-floatOutlinedLabel"
-                                  >Email</span
-                                ></label
-                              ><input
-                                data-testid=""
-                                aria-label=""
-                                name=""
-                                type="email"
-                                disabled=""
-                                placeholder=""
-                                class="flex w-full grow bg-transparent text-base shadow-none outline-none focus:outline-none focus:ring-0 text-gray-100 placeholder:text-sm placeholder:text-gray-200 h-4.5 p-0 leading-none transition-[background-color,color] delay-[0s] duration-[600000s]"
-                                value="shoalamdu@gmail.com"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex w-max flex-col">
-                      <span
-                        role="link"
-                        class="mt-8 text-sm text-gray-50 underline"
-                        >Click to change password</span
-                      >
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="mt-17.5">
-                <div class="flex flex-col">
-                  <div
-                    class="flex flex-wrap justify-between"
-                    data-testid="SectionTitle"
-                  >
-                    <div class="text-lg font-bold leading-5 text-white">
-                      My subscription
-                    </div>
-                  </div>
-                  <div
-                    class="relative overflow-hidden rounded-lg bg-gradient-to-r from-accent to-[#FFF3B9] p-px mt-6 border border-yellow-400 border-1"
-                  >
-                    <div class="rounded-lg border-transparent bg-primary">
-                      <div class="flex flex-col gap-6 px-6 py-7.5">
-                        <div class="flex flex-col gap-1">
-                          <div
-                            class="flex flex-col items-start justify-between gap-1 md:flex-row"
-                          >
-                            <h3 class="m-0 text-2xl font-bold">Trial</h3>
-                            <button
-                              type="button"
-                              class="ease font-bold text-yellow-400 transition-all duration-300 hover:text-white"
-                            >
-                              Subscribe to get unlimited downloads
-                            </button>
-                          </div>
-                        </div>
-                        <div
-                          class="flex w-full flex-col items-center justify-between border-t border-solid border-gray-400 pt-4 md:flex-row"
-                        >
-                          <div class="flex items-center gap-[6px]">
-                            <div
-                              class="relative -mr-2"
-                              data-testid="CreditsCircle"
-                              style="height: 40px; width: 40px; scale: 0.4"
-                            >
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 18px;
-                                  top: -2px;
-                                  rotate: 0deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 28px;
-                                  top: 0.679492px;
-                                  rotate: 30deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 35.3205px;
-                                  top: 8px;
-                                  rotate: 60deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 38px;
-                                  top: 18px;
-                                  rotate: 90deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 35.3205px;
-                                  top: 28px;
-                                  rotate: 120deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 28px;
-                                  top: 35.3205px;
-                                  rotate: 150deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 18px;
-                                  top: 38px;
-                                  rotate: 180deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 8px;
-                                  top: 35.3205px;
-                                  rotate: 210deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 0.679492px;
-                                  top: 28px;
-                                  rotate: 240deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: -2px;
-                                  top: 18px;
-                                  rotate: 270deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 0.679492px;
-                                  top: 8px;
-                                  rotate: 300deg;
-                                "
-                              ></div>
-                              <div
-                                class="absolute rounded-full bg-gray-50"
-                                style="
-                                  height: 4px;
-                                  width: 6px;
-                                  left: 8px;
-                                  top: 0.679492px;
-                                  rotate: 330deg;
-                                "
-                              ></div>
-                            </div>
-                            <span
-                              class="text-sm font-medium leading-[140%] tracking-[-0.056px] text-white"
-                              >Voiceover credits remaining</span
-                            ><span
-                              class="text-sm font-medium leading-[20px] tracking-[0.056px] text-gray-100"
-                              >400 / 400</span
-                            >
-                          </div>
-                          <div
-                            class="flex flex-col gap-1 sm:flex-row md:items-center"
-                          >
-                            <span
-                              class="text-sm font-medium leading-[20px] tracking-[0.056px] text-gray-100"
-                              >Unlock 50,000 credits when you</span
-                            >
-                            <a
-                              data-testid="Link"
-                              class="text-sm font-medium leading-[20px] tracking-[0.056px] text-white underline"
-                              role="link"
-                              href="/page/pricing/max"
-                              >subscribe Now</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <ul
-                        class="flex flex-col gap-2.5 border-t border-gray-400 px-6 py-7.5"
-                        data-testid="FeaturesList"
-                      >
-                        <li class="flex items-center gap-2.5">
-                          <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fas"
-                            data-icon="check"
-                            class="svg-inline--fa fa-check fa-1x text-accent"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
-                            ></path></svg
-                          ><span>Watermarked music and footage</span>
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                          <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fas"
-                            data-icon="check"
-                            class="svg-inline--fa fa-check fa-1x text-accent"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
-                            ></path></svg
-                          ><span
-                            >Save and sort assets to fit your projects</span
-                          >
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                          <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fas"
-                            data-icon="check"
-                            class="svg-inline--fa fa-check fa-1x text-accent"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
-                            ></path></svg
-                          ><span>Share your curated collections</span>
-                        </li>
-                      </ul>
-                    </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-12"
+          >
+            <a href="artist-single.html" class="profile-card group block">
+              <div class="artist-img relative mb-2.5 block bg-black">
+                <img
+                  src="assets/img/img2.jpg"
+                  alt=""
+                  class="block max-w-full transition-all duration-500 ease-linear group-hover:opacity-30 aspect-square"
+                />
+                <div
+                  class="overlay absolute inset-0 flex flex-col items-center justify-center text-lg opacity-0 transition-all duration-500 ease-linear group-hover:opacity-100"
+                >
+                  <div class="overlay-content">
+                    <h3
+                      class="transition-smooth text-accent text-xl md:text-2xl font-bold group-hover:text-white"
+                    >
+                      Romeo
+                    </h3>
+                    <h5
+                      class="transition-smooth text-lg text-yellow-400 group-hover:text-white"
+                    >
+                      2 albums
+                    </h5>
                   </div>
                 </div>
               </div>
-            </div>
+              <h3
+                class="transition-smooth text-accent text-lg font-semibold group-hover:text-white"
+              >
+                Romeo
+              </h3>
+            </a>
+            <a href="artist-single.html" class="profile-card group block">
+              <div class="artist-img relative mb-2.5 block bg-black">
+                <img
+                  src="assets/img/img4.jpg"
+                  alt=""
+                  class="block max-w-full transition-all duration-500 ease-linear group-hover:opacity-30 aspect-square"
+                />
+                <div
+                  class="overlay absolute inset-0 flex flex-col items-center justify-center text-lg opacity-0 transition-all duration-500 ease-linear group-hover:opacity-100"
+                >
+                  <div class="overlay-content">
+                    <h3
+                      class="transition-smooth text-accent text-xl md:text-2xl font-bold group-hover:text-white"
+                    >
+                      Romeo
+                    </h3>
+                    <h5
+                      class="transition-smooth text-lg text-yellow-400 group-hover:text-white"
+                    >
+                      2 albums
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="transition-smooth text-accent text-lg font-semibold group-hover:text-white"
+              >
+                Romeo
+              </h3>
+            </a>
+            <a href="artist-single.html" class="profile-card group block">
+              <div class="artist-img relative mb-2.5 block bg-black">
+                <img
+                  src="assets/img/img3.jpg"
+                  alt=""
+                  class="block max-w-full transition-all duration-500 ease-linear group-hover:opacity-30 aspect-square"
+                />
+                <div
+                  class="overlay absolute inset-0 flex flex-col items-center justify-center text-lg opacity-0 transition-all duration-500 ease-linear group-hover:opacity-100"
+                >
+                  <div class="overlay-content">
+                    <h3
+                      class="transition-smooth text-accent text-xl md:text-2xl font-bold group-hover:text-white"
+                    >
+                      Romeo
+                    </h3>
+                    <h5
+                      class="transition-smooth text-lg text-yellow-400 group-hover:text-white"
+                    >
+                      2 albums
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="transition-smooth text-accent text-lg font-semibold group-hover:text-white"
+              >
+                Romeo
+              </h3>
+            </a>
+            <a href="artist-single.html" class="profile-card group block">
+              <div class="artist-img relative mb-2.5 block bg-black">
+                <img
+                  src="assets/img/img2.jpg"
+                  alt=""
+                  class="block max-w-full transition-all duration-500 ease-linear group-hover:opacity-30 aspect-square"
+                />
+                <div
+                  class="overlay absolute inset-0 flex flex-col items-center justify-center text-lg opacity-0 transition-all duration-500 ease-linear group-hover:opacity-100"
+                >
+                  <div class="overlay-content">
+                    <h3
+                      class="transition-smooth text-accent text-xl md:text-2xl font-bold group-hover:text-white"
+                    >
+                      Romeo
+                    </h3>
+                    <h5
+                      class="transition-smooth text-lg text-yellow-400 group-hover:text-white"
+                    >
+                      2 albums
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="transition-smooth text-accent text-lg font-semibold group-hover:text-white"
+              >
+                Romeo
+              </h3>
+            </a>
+            <a href="artist-single.html" class="profile-card group block">
+              <div class="artist-img relative mb-2.5 block bg-black">
+                <img
+                  src="assets/img/img4.jpg"
+                  alt=""
+                  class="block max-w-full transition-all duration-500 ease-linear group-hover:opacity-30 aspect-square"
+                />
+                <div
+                  class="overlay absolute inset-0 flex flex-col items-center justify-center text-lg opacity-0 transition-all duration-500 ease-linear group-hover:opacity-100"
+                >
+                  <div class="overlay-content">
+                    <h3
+                      class="transition-smooth text-accent text-xl md:text-2xl font-bold group-hover:text-white"
+                    >
+                      Romeo
+                    </h3>
+                    <h5
+                      class="transition-smooth text-lg text-yellow-400 group-hover:text-white"
+                    >
+                      2 albums
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="transition-smooth text-accent text-lg font-semibold group-hover:text-white"
+              >
+                Romeo
+              </h3>
+            </a>
+            <a href="artist-single.html" class="profile-card group block">
+              <div class="artist-img relative mb-2.5 block bg-black">
+                <img
+                  src="assets/img/img3.jpg"
+                  alt=""
+                  class="block max-w-full transition-all duration-500 ease-linear group-hover:opacity-30 aspect-square"
+                />
+                <div
+                  class="overlay absolute inset-0 flex flex-col items-center justify-center text-lg opacity-0 transition-all duration-500 ease-linear group-hover:opacity-100"
+                >
+                  <div class="overlay-content">
+                    <h3
+                      class="transition-smooth text-accent text-xl md:text-2xl font-bold group-hover:text-white"
+                    >
+                      Romeo
+                    </h3>
+                    <h5
+                      class="transition-smooth text-lg text-yellow-400 group-hover:text-white"
+                    >
+                      2 albums
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="transition-smooth text-accent text-lg font-semibold group-hover:text-white"
+              >
+                Romeo
+              </h3>
+            </a>
+            <a href="artist-single.html" class="profile-card group block">
+              <div class="artist-img relative mb-2.5 block bg-black">
+                <img
+                  src="assets/img/img2.jpg"
+                  alt=""
+                  class="block max-w-full transition-all duration-500 ease-linear group-hover:opacity-30 aspect-square"
+                />
+                <div
+                  class="overlay absolute inset-0 flex flex-col items-center justify-center text-lg opacity-0 transition-all duration-500 ease-linear group-hover:opacity-100"
+                >
+                  <div class="overlay-content">
+                    <h3
+                      class="transition-smooth text-accent text-xl md:text-2xl font-bold group-hover:text-white"
+                    >
+                      Romeo
+                    </h3>
+                    <h5
+                      class="transition-smooth text-lg text-yellow-400 group-hover:text-white"
+                    >
+                      2 albums
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="transition-smooth text-accent text-lg font-semibold group-hover:text-white"
+              >
+                Romeo
+              </h3>
+            </a>
+            <a href="artist-single.html" class="profile-card group block">
+              <div class="artist-img relative mb-2.5 block bg-black">
+                <img
+                  src="assets/img/img3.jpg"
+                  alt=""
+                  class="block max-w-full transition-all duration-500 ease-linear group-hover:opacity-30 aspect-square"
+                />
+                <div
+                  class="overlay absolute inset-0 flex flex-col items-center justify-center text-lg opacity-0 transition-all duration-500 ease-linear group-hover:opacity-100"
+                >
+                  <div class="overlay-content">
+                    <h3
+                      class="transition-smooth text-accent text-xl md:text-2xl font-bold group-hover:text-white"
+                    >
+                      Romeo
+                    </h3>
+                    <h5
+                      class="transition-smooth text-lg text-yellow-400 group-hover:text-white"
+                    >
+                      2 albums
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="transition-smooth text-accent text-lg font-semibold group-hover:text-white"
+              >
+                Romeo
+              </h3>
+            </a>
+            <a href="artist-single.html" class="profile-card group block">
+              <div class="artist-img relative mb-2.5 block bg-black">
+                <img
+                  src="assets/img/img4.jpg"
+                  alt=""
+                  class="block max-w-full transition-all duration-500 ease-linear group-hover:opacity-30 aspect-square"
+                />
+                <div
+                  class="overlay absolute inset-0 flex flex-col items-center justify-center text-lg opacity-0 transition-all duration-500 ease-linear group-hover:opacity-100"
+                >
+                  <div class="overlay-content">
+                    <h3
+                      class="transition-smooth text-accent text-xl md:text-2xl font-bold group-hover:text-white"
+                    >
+                      Romeo
+                    </h3>
+                    <h5
+                      class="transition-smooth text-lg text-yellow-400 group-hover:text-white"
+                    >
+                      2 albums
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="transition-smooth text-accent text-lg font-semibold group-hover:text-white"
+              >
+                Romeo
+              </h3>
+            </a>
           </div>
         </div>
       </div>
     </main>
-
+    <!--============
+     Main Conent END
+     ==============-->
     <!--============ Footer ================-->
 
     <footer class="bg-gray-700">

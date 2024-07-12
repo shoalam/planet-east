@@ -358,3 +358,18 @@ font-style: normal; */
 .total-vote-count {
   display: none;
 }
+
+.artist-img img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.artist-img .overlay-content-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: top center;
+  aspect-ratio: none;
+}
