@@ -1689,13 +1689,13 @@ video {
 :root {
   --primary-color: rgb(230, 196, 38);
   --gray-color: rgb(43, 43, 43);
-  --colors-primary: rgb(23, 23, 23);
+  --colors-primary:23, 23, 23;
   --colors-accent-title: 247 191 83;
   --colors-accent: 255 218 42;
 }
 
 body {
-  background-color: rgb(23, 23, 23) !important;
+  background-color: rgb(var(--colors-primary)) !important;
 }
 
 .bg-gray-500 {

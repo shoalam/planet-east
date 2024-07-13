@@ -373,3 +373,18 @@ font-style: normal; */
   object-position: top center;
   aspect-ratio: none;
 }
+
+.signinModal {
+  display: none;
+}
+.signinModalContent {
+  background-color: rgb(var(--colors-primary));
+}
+
+.signUpModal {
+  display: none;
+}
+
+.signUpModalContent {
+  background-color: rgb(var(--colors-primary));
+}
