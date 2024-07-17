@@ -7,6 +7,7 @@
   --gray-color: rgb(43, 43, 43);
   --colors-primary: 23, 23, 23;
   --colors-accent-title: 247 191 83;
+  --brand-color: #ff0f7b;
 }
 
 html {
@@ -19,6 +20,19 @@ body {
 .bg-gray-500 {
   background-color: var(--gray-color);
 }
+
+.bg-brand {
+  background-color: var(--brand-color);
+}
+
+.text-brand {
+  color: var(--brand-color);
+}
+
+.border-brand {
+  border-color: var(--brand-color);
+}
+
 .radio-group_systemControlRadio__kwcPG:checked
   + .radio-group_controlRadio__yqwIA {
   box-shadow: 0 0 0 4px inset rgb(var(--colors-primary) / 1);

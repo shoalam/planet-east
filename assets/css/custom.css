@@ -50,6 +50,8 @@
 
 .headTitleSection .title {
   font-size: clamp(25px, 3vw, 50px);
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .panelContainer.borderTop {
@@ -92,6 +94,10 @@
 
 .rteContainer {
   padding: 50px 0 50px 50px;
+}
+
+.rteContainer a {
+  display: inline-block;
 }
 
 .rteContainer h2 {
@@ -387,4 +393,40 @@ font-style: normal; */
 
 .signUpModalContent {
   background-color: rgb(var(--colors-primary));
+}
+
+.agreement-details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.agreement-details p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.dropdown {
+  width: 200px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.user-info:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
 }
